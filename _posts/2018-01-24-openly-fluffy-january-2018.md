@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Openly Fluffy January 2018"
 date: 2018-01-24
 ---

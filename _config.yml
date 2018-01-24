@@ -1,2 +1,4 @@
 name: Instafluff
 markdown: kramdown
+
+theme: jekyll-theme-minimal

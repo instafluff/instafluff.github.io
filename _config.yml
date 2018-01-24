@@ -1,4 +1,13 @@
+title: Instafluff
 name: Instafluff
+description: The Comfiest Action/Adventure Quickplays and Speedruns Wed/Fri 9am PST, Sun 1pm on Twitch.TV
+
+social_sites:
+  twitch: instafluff
+  twitter: instaflufftv
+  instagram: instaflufftv
+  youtube: instaflufftv
+
 markdown: kramdown
 
 theme: jekyll-theme-minimal

@@ -4,8 +4,6 @@ title: "Openly Fluffy January 2018"
 date: 2018-01-24
 ---
 
-## Openly Fluffy January 2018 ##
-
 --------------------------
 
 Hey Everyone,

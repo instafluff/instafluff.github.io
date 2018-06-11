@@ -16,6 +16,8 @@ This month will mark a whole year of streams, can you believe it? What an amazin
 
 Through the month of May, we experimented with sticking to the same games and instead spent more time with puns, great lies to tell kids, silly test answers, and even fancy manners and business etiquette and I think it felt right for us. So that is what I think we should continue to focus on with more stories, pancakes, music, more... fluffy! While I am afraid that moving away from primarily games might lose the interest of some of our regulars, this is the direction I would like for us to keep moving towards: less game, more us. I hope you think so too.
 
+We have a new, HEART emote! (Thanks, PinataHero!) Do you like it? It also means our lurk emote, instafLurk, is now open to everyone via FFZ/BTTV so if you would like to say hi but don't quite feel chatty, this emote is available now for you. At the same time, this month, we merged all of our roles in Discord together because it kept bothering me a bit that it would show subscribers separate from everyone else when from the beginning our community has been about welcoming everyone. I hope these changes agreed with you too.
+
 I have also been thinking about how to be more active off-stream and even though we have a Discord server, it doesn't feel as welcoming as I would like it to feel. While I don't have any concrete plans yet, this is an area where it seems like I could work on and help encourage more of us to get to know each other.
 
 There are some more fluffnouncements but those will be a surprise during our streamaversary stream!

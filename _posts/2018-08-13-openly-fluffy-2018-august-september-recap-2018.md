@@ -1,28 +1,38 @@
 ---
 layout: post
-title: "Openly Fluffy August 2018 Recap"
-date: 2018-09-19
+title: "Openly Fluffy August/September 2018 Recap"
+date: 2018-10-01
 ---
 
 --------------------------
 
-Openly Fluffy August 2018 Recap
+Openly Fluffy August/September 2018 Recap
 
-- Doubled up on Coding Cafe
-- Built 11 open-source projects
-- Made new friends & Interviewed on Front Page
-- Passed 900 followers
-- Chat Credits System
-- Mug Recipes
-Plans:
-- 
-- Make credits automatic per stream
-- 
-
-
-Hello hello! August was quite the month wasn't it? We're doing new things but still trying to be the same Comfy Corner as ever. Thank you for being a part of what makes our place comfy.
+Hello hello! Are these updates better late than never? We did and changed a lot in the past two months. We're doing new things but still trying to be the same Comfy Corner as ever. Thank you for being a part of what makes our place comfy.
 
 #### Fluff Thoughts ####
+
+In trying to shift more towards creative streams and doing something more unique, 
+
+- Doubled up on Coding Cafe
+- Built 12 open-source projects (17 total)
+- Made new friends & Interviewed on Front Page
+- Passed 1000 followers, and 100 subs
+- Chat Credits System
+- Launched ChatTranslator Bot
+- Wrote stories with MadLibby
+- Played Chat Pachinko Marbles
+- Made BongoCat Play along to music
+- Chat Barista
+- Dino Points
+- Analyzed Gun Violence Data
+- Sentiment Calculator
+- Completed Shadow of the Tomb Raider
+- Mug Recipes
+Plans:
+- Make credits automatic per stream
+- In October, our theme will be AI
+- TwitchCon end of Month
 
 
 

@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Santa's Secret Service</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135113520-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-135113520-1');
+    </script>
+    <link rel="stylesheet" href="https://www.pixelplush.dev/maze/web/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="https://www.pixelplush.dev/maze/web/pinkfluffyunicorn.min.js"></script>
+  </head>
+  <body>
+    <div id="unicorn-display"></div>
+    <script src="https://www.pixelplush.dev/maze/web/game.min.js"></script>
+    <script>
+      const params = new URLSearchParams( location.search );
+      setupGame( "Santa's Secret Service", {
+        path: "https://www.pixelplush.dev/maze/web",
+        map: "christmas/bcgXmas",
+        walls: "christmas/wallsXmas",
+        fog: [ "fog", "fog3" ],
+        banner: "christmas/banner",
+        instructions: "christmas/instructions",
+        endBG: "christmas/bcg_end",
+        endNote: "christmas/thank_you",
+        scoreBoard: [ "christmas/scoreboard1", "christmas/scoreboard2", "christmas/scoreboard3", "christmas/scoreboard4" ],
+        scoreBoardVerticalOffset: 0,
+        bannerHorizontalOffset: 20,
+        characters: {
+          "elf": "elf",
+          "elfgirl": "elfgirl",
+          "snowman": "snowman",
+          "santa": "santa",
+          "claus": "claus",
+          "grinch": "grinch",
+          "maaya": "maaya",
+          "instafluff": "insta",
+          "avellana": "avelana",
+          "jimmy": "jimmy",
+          "sammie": "sammie",
+        },
+        playable: [ "elf", "elfgirl", "santa", "claus", "snowman" ],
+        prizes: {
+          "christmas/gift_small_green": 5,
+          "christmas/gift_big_pink": 10,
+          "christmas/candy_cane": 20,
+          "christmas/jinglebell": 25,
+          "christmas/gingerbread": 30,
+          "christmas/megagift": 100,
+        },
+        prizeRarity: {
+          "christmas/gift_small_green": 50,
+          "christmas/gift_big_pink": 50,
+          "christmas/candy_cane": 25,
+          "christmas/jinglebell": 20,
+          "christmas/gingerbread": 10,
+          "christmas/megagift": 1
+        },
+        traps: {
+          "christmas/hole": -5,
+          "christmas/hole2": -5,
+          "christmas/hole3": -5
+        },
+        trapRarity: {
+          "christmas/hole": 30,
+          "christmas/hole2": 30,
+          "christmas/hole3": 30,
+        },
+        bossName: "GRINCH!",
+        bossCharacter: "grinch",
+        defaultNameColor: "#ffffff",
+        scoreColor: "#2E84D9",
+        scoreboardColor: "#2E84D9",
+        snow: true,
+        giftDrop: "christmas/megagift",
+        lanterns: "lanterns",
+        glows: [
+          { x: 6, y: 5 },
+          { x: 634, y: 5 },
+          { x: 510, y: 30 },
+          { x: 320, y: 62 },
+          { x: 97, y: 94 },
+          { x: 543, y: 190 },
+          { x: 97, y: 223 },
+          { x: 415, y: 254 },
+          { x: 576, y: 63 },
+          { x: 256, y: 319 },
+          { x: 5, y: 344 },
+          { x: 634, y: 344 },
+        ]
+      },
+      {
+        channel: params.get( "channel" ),
+        oauth: params.get( "oauth" ),
+        messageFormat: params.get( "messageFormat" ),
+        addBoss: !params.get( "noBoss" ),
+        bossEffect: params.get( "bossEffect" ) || "steal",
+        numBosses: params.get( "bosses" ) ? parseInt( params.get( "bosses" ) ) : 1,
+        numPrizes: params.get( "prizes" ) ? parseInt( params.get( "prizes" ) ) : 7,
+        numTraps: params.get( "traps" ) ? parseInt( params.get( "traps" ) ) : 5,
+        showBannerAd: false,
+      });
+    </script>
+  </body>
+</html>

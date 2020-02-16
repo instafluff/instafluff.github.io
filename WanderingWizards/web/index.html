@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Wandering Wizards</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135113520-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-135113520-1');
+    </script>
+    <link rel="stylesheet" href="https://www.pixelplush.dev/maze/web/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="https://www.pixelplush.dev/maze/web/pinkfluffyunicorn.min.js"></script>
+  </head>
+  <body>
+    <div id="unicorn-display"></div>
+    <script src="https://www.pixelplush.dev/maze/web/game.min.js"></script>
+    <script>
+      const params = new URLSearchParams( location.search );
+      setupGame( "Wandering Wizards", {
+        path: "https://www.pixelplush.dev/maze/web",
+        map: "floor",
+        walls: "walls",
+        fog: [ "fog3", "fog4" ],
+        banner: "game_end_sign",
+        instructions: "instructions",
+        endBG: "end_bcg_dark",
+        endNote: "end_note",
+        scoreBoard: [ "scoreboard" ],
+        scoreBoardVerticalOffset: 50,
+        characters: {
+          "maaya": "maaya",
+          "instafluff": "insta",
+          "avellana": "avelana",
+          "jimmy": "jimmy",
+          "dobby": "dobby",
+          "harry": "harry",
+          "hermione": "hermione",
+          "ron": "ron",
+          "voldemort": "voldemort",
+          "sammie": "sammie",
+        },
+        playable: [ "dobby", "harry", "hermione", "ron" ],
+        animatedPrizes: {
+            "goblet": {
+                "appears": 14
+            }
+        },
+        prizes: {
+          "potion_green": 5,
+          "potion_pink": 10,
+          "frog": 20,
+          "egg": 30,
+          "goblet": 100,
+        },
+        prizeRarity: {
+          "potion_green": 50,
+          "potion_pink": 50,
+          "frog": 20,
+          "egg": 10,
+          "goblet": 1,
+        },
+        traps: {
+          "roots": -5,
+        },
+        trapRarity: {
+          "roots": 30,
+        },
+        bossName: "EVIL!",
+        bossCharacter: "voldemort",
+        defaultNameColor: "#ffffff",
+        scoreColor: "#000000",
+        scoreboardColor: "#000000",
+        snow: false,
+        giftDrop: null,
+        lanterns: "lanterns_normal",
+        glows: [
+          { x: 6, y: 5 },
+          { x: 224, y: 33 },
+          { x: 634, y: 5 },
+          { x: 510, y: 30 },
+          { x: 383, y: 58 },
+          { x: 289, y: 94 },
+          { x: 32, y: 95 },
+          { x: 127, y: 127 },
+          { x: 479, y: 128 },
+          { x: 224, y: 159 },
+          { x: 384, y: 126 },
+          { x: 608, y: 223 },
+          { x: 62, y: 253 },
+          { x: 257, y: 223 },
+          { x: 415, y: 254 },
+          { x: 575, y: 286 },
+          { x: 576, y: 63 },
+          { x: 96, y: 317 },
+          { x: 257, y: 345 },
+          { x: 511, y: 318 },
+          { x: 5, y: 344 },
+          { x: 634, y: 344 },
+        ]
+      },
+      {
+        channel: params.get( "channel" ),
+        oauth: params.get( "oauth" ),
+        messageFormat: params.get( "messageFormat" ),
+        addBoss: !params.get( "noBoss" ),
+        bossEffect: params.get( "bossEffect" ) || "steal",
+        numBosses: params.get( "bosses" ) ? parseInt( params.get( "bosses" ) ) : 1,
+        numPrizes: params.get( "prizes" ) ? parseInt( params.get( "prizes" ) ) : 7,
+        numTraps: params.get( "traps" ) ? parseInt( params.get( "traps" ) ) : 5,
+        showBannerAd: false,
+      });
+    </script>
+  </body>
+</html>

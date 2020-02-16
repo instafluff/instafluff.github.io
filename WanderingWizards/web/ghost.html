@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Trick or Treat</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135113520-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-135113520-1');
+    </script>
+    <link rel="stylesheet" href="https://www.pixelplush.dev/maze/web/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="https://www.pixelplush.dev/maze/web/pinkfluffyunicorn.min.js"></script>
+  </head>
+  <body>
+    <div id="unicorn-display"></div>
+    <script src="https://www.pixelplush.dev/maze/web/game.min.js"></script>
+    <script>
+      const params = new URLSearchParams( location.search );
+      setupGame( "Trick or Treat", {
+        path: "https://www.pixelplush.dev/maze/web",
+        map: "halloween/floor_g",
+        walls: "halloween/walls_g",
+        fog: [ "halloween/fog_green", "halloween/fog2_green" ],
+        banner: "halloween/game_end_sign_g",
+        instructions: "halloween/instructions_g",
+        endBG: "halloween/end_bcg_dark_g",
+        endNote: "halloween/end_note_g",
+        scoreBoard: [ "halloween/scoreboard_g" ],
+        scoreBoardVerticalOffset: 50,
+        characters: {
+          "vampire": "vampire",
+          "witch": "witch",
+          "zombie": "zombie",
+          "monster": "monster",
+          "ghost": "ghost",
+          "maaya": "maaya",
+          "instafluff": "insta",
+          "avellana": "avelana",
+          "jimmy": "jimmy",
+          "sammie": "sammie",
+        },
+        playable: [ "vampire", "witch", "zombie", "monster" ],
+        prizes: {
+          "halloween/green_treat": 5,
+          "halloween/pink_treat": 10,
+          "halloween/candycorn": 20,
+          "halloween/lifesaver": 25,
+          "halloween/chocolate": 30,
+          "halloween/golden_pumpkin": 100,
+        },
+        prizeRarity: {
+          "halloween/green_treat": 50,
+          "halloween/pink_treat": 50,
+          "halloween/candycorn": 25,
+          "halloween/lifesaver": 20,
+          "halloween/chocolate": 10,
+          "halloween/golden_pumpkin": 1
+        },
+        traps: {
+          "halloween/web": -5
+        },
+        trapRarity: {
+          "halloween/web": 30
+        },
+        bossName: "BOO!",
+        bossCharacter: "ghost",
+        giftDrop: null,
+        lanterns: "halloween/lanterns",
+        glows: [
+          { x: 6, y: 5 },
+          { x: 224, y: 33 },
+          { x: 634, y: 5 },
+          { x: 510, y: 30 },
+          { x: 383, y: 58 },
+          { x: 289, y: 94 },
+          { x: 32, y: 95 },
+          { x: 127, y: 127 },
+          { x: 479, y: 128 },
+          { x: 224, y: 159 },
+          { x: 384, y: 126 },
+          { x: 608, y: 223 },
+          { x: 62, y: 253 },
+          { x: 257, y: 223 },
+          { x: 415, y: 254 },
+          { x: 575, y: 286 },
+          { x: 576, y: 63 },
+          { x: 96, y: 317 },
+          { x: 257, y: 345 },
+          { x: 511, y: 318 },
+          { x: 5, y: 344 },
+          { x: 634, y: 344 },
+        ]
+      },
+      {
+        channel: params.get( "channel" ),
+        oauth: params.get( "oauth" ),
+        messageFormat: params.get( "messageFormat" ),
+        addBoss: !params.get( "noBoss" ),
+        bossEffect: params.get( "bossEffect" ) || "steal",
+        numBosses: params.get( "bosses" ) ? parseInt( params.get( "bosses" ) ) : 1,
+        numPrizes: params.get( "prizes" ) ? parseInt( params.get( "prizes" ) ) : 7,
+        numTraps: params.get( "traps" ) ? parseInt( params.get( "traps" ) ) : 5,
+        showBannerAd: false,
+      });
+    </script>
+  </body>
+</html>

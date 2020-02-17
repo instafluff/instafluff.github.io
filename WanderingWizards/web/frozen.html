@@ -9,106 +9,10 @@
       gtag('js', new Date());
       gtag('config', 'UA-135113520-1');
     </script>
-    <link rel="stylesheet" href="https://www.pixelplush.dev/maze/web/fonts.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
-    <script src="https://www.pixelplush.dev/maze/web/pinkfluffyunicorn.min.js"></script>
   </head>
   <body>
-    <div id="unicorn-display"></div>
-    <script src="https://www.pixelplush.dev/maze/web/game.min.js"></script>
-    <script>
-      const params = new URLSearchParams( location.search );
-      setupGame( "Frozen Frenzy", {
-        path: "https://www.pixelplush.dev/maze/web",
-        map: "frozenfrenzy/floor",
-        walls: "frozenfrenzy/walls",
-        fog: [ "fog", "fog3" ],
-        banner: "frozenfrenzy/banner",
-        instructions: "frozenfrenzy/instructions",
-        endBG: "frozenfrenzy/end_bcg",
-        endNote: "frozenfrenzy/end",
-        scoreBoard: [ "frozenfrenzy/scoreboard" ],
-        scoreBoardVerticalOffset: 0,
-        bannerHorizontalOffset: 60,
-        characters: {
-          "elf": "elf",
-          "elfgirl": "elfgirl",
-          "snowman": "snowman",
-          // "santa": "santa",
-          // "claus": "claus",
-          "ghost": "ghost",
-          "maaya": "maaya",
-          "instafluff": "insta",
-          "avellana": "avelana",
-          "jimmy": "jimmy",
-          "sammie": "sammie",
-        },
-        playable: [ "snowman" ],
-        animatedPrizes: {
-            "frozenfrenzy/heart": {
-                "shine": 14
-            }
-        },
-        prizes: {
-          "frozenfrenzy/green_mitten": 5,
-          "frozenfrenzy/pink_mitten": 10,
-          "frozenfrenzy/carrot": 20,
-          "frozenfrenzy/hat": 25,
-          "frozenfrenzy/coco": 30,
-          "frozenfrenzy/heart": 100,
-        },
-        prizeRarity: {
-          "frozenfrenzy/green_mitten": 50,
-          "frozenfrenzy/pink_mitten": 50,
-          "frozenfrenzy/carrot": 25,
-          "frozenfrenzy/hat": 20,
-          "frozenfrenzy/coco": 10,
-          "frozenfrenzy/heart": 1
-        },
-        traps: {
-          "christmas/hole": -5,
-          "christmas/hole2": -5,
-          "christmas/hole3": -5
-        },
-        trapRarity: {
-          "christmas/hole": 30,
-          "christmas/hole2": 30,
-          "christmas/hole3": 30,
-        },
-        bossName: "GHOST!",
-        bossCharacter: "ghost",
-        defaultNameColor: "#ffffff",
-        scoreColor: "#2E84D9",
-        scoreboardColor: "#2E84D9",
-        snow: true,
-        giftDrop: null,
-        lanterns: "frozenfrenzy/lanterns",
-        glows: [
-          { x: 6, y: 5 },
-          { x: 634, y: 5 },
-          { x: 510, y: 30 },
-          { x: 320, y: 62 },
-          { x: 97, y: 94 },
-          { x: 543, y: 190 },
-          { x: 97, y: 223 },
-          { x: 415, y: 254 },
-          { x: 576, y: 63 },
-          { x: 256, y: 319 },
-          { x: 5, y: 344 },
-          { x: 634, y: 344 },
-        ]
-      },
-      {
-        channel: params.get( "channel" ),
-        oauth: params.get( "oauth" ),
-        messageFormat: params.get( "messageFormat" ),
-        addBoss: !params.get( "noBoss" ),
-        bossEffect: params.get( "bossEffect" ) || "steal",
-        numBosses: params.get( "bosses" ) ? parseInt( params.get( "bosses" ) ) : 1,
-        numPrizes: params.get( "prizes" ) ? parseInt( params.get( "prizes" ) ) : 7,
-        numTraps: params.get( "traps" ) ? parseInt( params.get( "traps" ) ) : 5,
-        showBannerAd: false,
-      });
-    </script>
+      <script>
+        document.location.href = `https://www.pixelplush.dev/maze/frozen.html${document.location.search}`;
+      </script>
   </body>
 </html>

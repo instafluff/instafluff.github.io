@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans:400,700|Open+Sans:400,700");
+
+// Theme Variables
+$body-bg-color: #FFB927;
+$nav-bg-color: #FFAD15;
+$accent-bg-color: #FFDF65; // for light sections
+$header-text-color: #544323;
+$text-color: #635028;
+$link-text-color: #26547C;
+
+// Global Reset & Base Styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $body-bg-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+a {
+  color: $link-text-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Simple grid
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.col {
+  padding: 0 1rem;
+}
+.col-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-4,
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bubblegum Sans', cursive;
+  color: $header-text-color;
+  margin-bottom: 1rem;
+}
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: $nav-bg-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+  text-align: center;
+}
+.button:hover {
+  background-color: darken($nav-bg-color, 10%);
+}
+
+// Sections
+.hero, .section {
+  padding: 4rem 0;
+  text-align: center;
+}
+.lightBg {
+  background-color: $accent-bg-color;
+}

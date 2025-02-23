@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Home";
+---
+<Layout title={pageTitle}>
+
+  <!-- Intro Section -->
+  <section id="sec-intro" class="hero">
+    <div class="container">
+      <h1>Welcome to the Comfy Corner!</h1>
+      <p class="subtitle">
+        Hello! I'm Instafluff®, the Comfiest Coder and Mug Chef on Twitch and we are all about getting more comfy with ourselves and the world around us.
+      </p>
+      <p class="subtitle">
+        We gather on <a href="https://www.twitch.tv/instafluff" target="_blank" rel="noopener noreferrer">twitch.tv/instafluff</a> and hang out in <a href="http://discord.instafluff.tv/" target="_blank" rel="noopener noreferrer">Discord</a> outside of that schedule.
+      </p>
+    </div>
+  </section>
+
+  <!-- Coding Cafe Section with Twitch Embed -->
+  <section id="sec-codingcafe" class="section lightBg">
+    <div class="container">
+      <div class="row">
+        <div class="col col-4" style="text-align: left;">
+          <h2>Coding Cafe</h2>
+          <p>Come and relax in the Comfiest Corner of Twitch</p>
+          <p></p>
+          <a class="button" href="https://www.twitch.tv/instafluff" target="_blank" rel="noopener noreferrer">
+            Visit Instafluff's Channel
+          </a>
+        </div>
+        <div class="col col-8">
+          <div style="text-align: center;">
+            <iframe
+              src="https://player.twitch.tv/?channel=instafluff&muted=true&parent=www.instafluff.tv"
+              height="360"
+              width="640"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="sec-projects" class="section lightBg">
+    <div class="container">
+      <h2>Some of My Popular Projects</h2>
+      <p class="subtitle">
+        My projects are available open-source on <a href="https://github.com/instafluff" target="_blank" rel="noopener noreferrer">GitHub</a>!<br>
+        If you find them useful, please consider financially supporting my work by becoming a <a href="https://github.com/sponsors/instafluff" target="_blank" rel="noopener noreferrer">Comfy Sponsor</a>!
+      </p>
+      <div class="row">
+        <div class="col col-6">
+          <h3>ComfyJS</h3>
+          <p><a href="https://github.com/instafluff/ComfyJS" target="_blank" rel="noopener noreferrer">JavaScript library for Twitch Chat</a></p>
+          <iframe width="480" height="270" src="https://www.youtube.com/embed/oXpPwnUQCCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col col-6">
+          <h3>ChatBlocks</h3>
+          <p><a href="https://www.instafluff.tv/ChatBlocks/" target="_blank" rel="noopener noreferrer">Easy no-code Twitch Chatbot and Channel Points tool</a></p>
+          <iframe width="480" height="270" src="https://www.youtube.com/embed/F9JcxPXcQZc" title="SUPER-Easy and Code-Free Twitch Chatbot with Channel Points integration - ChatBlocks!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col col-6">
+          <h3>Sleepless in Stardew</h3>
+          <p><a href="https://github.com/instafluff/SleeplessInStardew" target="_blank" rel="noopener noreferrer">The Late-Night Get-More-Done Sleep-less Insomniac Stardew Valley Mod</a></p>
+          <img src="/assets/static/sleeplessinstardew-abefd8ce492e4c33d442a79038069cce.png" alt="Sleepless in Stardew" />
+        </div>
+        <div class="col col-6">
+          <h3>ReadGood</h3>
+          <p><a href="https://github.com/instafluff/ReadGood" target="_blank" rel="noopener noreferrer">The dyslexia-friendly easy-to-read Twitch chat reader</a></p>
+          <img src="/assets/static/readgood-5905ed7e21d3a76b9be6bcdc44a3e91d.png" alt="ReadGood" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookbook Section -->
+  <section id="sec-cookbook" class="section lightBg">
+    <div class="container">
+      <h2>The Comfy Mug Chef's Spellbook!</h2>
+      <p class="subtitle">
+        My best-selling book! :D<br>
+        A mug cookbook created with <a href="https://www.julieokahara.com" target="_blank" rel="noopener noreferrer">Julie Okahara</a> designed for families and kids of all ages.
+      </p>
+      <a class="button" href="http://cookbook.instafluff.tv" target="_blank" rel="noopener noreferrer">
+        Ooh, I want a copy!
+      </a>
+      <div class="row" style="margin-top: 2rem;">
+        <div class="col col-4">
+          <img src="/assets/static/spellbookCover-b793cfe28b6db6d8c469d074161bc89b.jpg" alt="Spellbook Cover" />
+        </div>
+        <div class="col col-8">
+          <img src="/assets/static/spellbookSpread2-b82349ad759be484f75021004a1b15b2.jpg" alt="Spellbook Spread" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Twitch Extensions Section -->
+  <section id="sec-twitchextensions" class="section">
+    <div class="container">
+      <h2>Twitch Extensions</h2>
+      <p class="subtitle">Extensions that you can add to your Twitch channel!</p>
+      <div class="row">
+        <div class="col col-6">
+          <div style="max-width: 300px; margin: auto; text-align: left;">
+            <img src="/assets/images/ChatTranslator.png" alt="ChatTranslator" />
+            <h3>ChatTranslator</h3>
+            <p>Twitch Extension to break down language barriers among viewers!</p>
+            <a class="button" href="http://chattranslator.instafluff.tv/" target="_blank" rel="noopener noreferrer">
+              View ChatTranslator
+            </a>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div style="max-width: 300px; margin: auto; text-align: left;">
+            <img src="/assets/images/ClippyRaid.png" alt="ClippyRaid" />
+            <h3>ClippyRaid</h3>
+            <p>Twitch Extension to remove the hassle of highlighting chat text!</p>
+            <a class="button" href="http://clippyraid.instafluff.tv/" target="_blank" rel="noopener noreferrer">
+              View ClippyRaid
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

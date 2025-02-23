@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Tools";
+
+const tools = [
+  { title: 'PixelPlush', url: 'https://www.pixelplush.dev' },
+  { title: 'ComfySounds', url: 'https://www.instafluff.tv/ComfySounds/christmas.html' },
+  { title: 'SnowmASCII', url: 'https://www.instafluff.tv/SnowmASCII/' },
+  { title: 'ChristmASCII', url: 'https://www.instafluff.tv/ChristmASCII' },
+  { title: 'FireplASCII', url: 'https://www.instafluff.tv/FireplASCII' },
+  { title: 'ComfyJazz', url: 'https://www.instafluff.tv/ComfyJazz?channel=instafluff&instrument=harp,piano' },
+  { title: 'Rainbow Rampage', url: 'https://www.instafluff.tv/RainbowRampage/dist?channel=instafluff&overlay=true' },
+  { title: 'Capture The Fluff', url: 'https://www.instafluff.tv/CaptureTheFluff/index.html?channel=instafluff' },
+  { title: 'Emote Display', url: 'https://www.instafluff.tv/EmoteDisplay/?channel=instafluff' },
+  { title: 'Baba Yoda', url: 'https://www.instafluff.tv/BabaYoda?overlay=true&tts=true&voice=Ivy&channel=instafluff&reward=530fcb74-f038-4cf1-b52a-9c915cbb2331' },
+  { title: 'Highlight Of My Chat', url: 'https://www.instafluff.tv/HighlightOfMyChat?channel=instafluff&bottom=true' },
+  { title: 'Stream Snippets', url: 'https://www.instafluff.tv/StreamSnippets?channel=instafluff&chat=true' },
+  { title: 'TwitchCustomRewardID', url: 'https://github.com/instafluff/TwitchCustomRewardID' },
+  { title: 'TwitchOAuthRevoker', url: 'https://github.com/instafluff/TwitchOAuthRevoker' },
+  { title: 'Extrollminator', url: 'https://github.com/instafluff/Extrollminator' },
+  { title: 'NewChatterAlert', url: 'https://github.com/instafluff/NewChatterAlert' },
+];
+---
+<Layout title={pageTitle}>
+  <section id="tools" class="hero">
+    <div class="container">
+        <h1>Tools</h1>
+        <p class="subtitle">Explore some of my fun and useful projects:</p>
+        <ul style="list-style: none; padding: 0; line-height: 2;">
+            {tools.map(tool => (
+            <li>
+                <a href={tool.url} target="_blank" rel="noopener noreferrer">{tool.title}</a>
+            </li>
+            ))}
+        </ul>
+    </div>
+  </section>
+</Layout>

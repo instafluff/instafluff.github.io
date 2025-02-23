@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const pageTitle = "Home";
+import sleeplessInStardew from '../assets/static/sleeplessinstardew-abefd8ce492e4c33d442a79038069cce.png';
+import readGood from '../assets/static/readgood-5905ed7e21d3a76b9be6bcdc44a3e91d.png';
+import spellbookCover from '../assets/static/spellbookCover-b793cfe28b6db6d8c469d074161bc89b.jpg';
+import spellbookSpread from "../assets/static/spellbookSpread2-b82349ad759be484f75021004a1b15b2.jpg";
+import chatTranslator from "../assets/images/ChatTranslator.png";
+import clippyRaid from "../assets/images/ClippyRaid.png";
 ---
 <Layout title={pageTitle}>
 
@@ -67,12 +73,12 @@ const pageTitle = "Home";
         <div class="col col-6">
           <h3>Sleepless in Stardew</h3>
           <p><a href="https://github.com/instafluff/SleeplessInStardew" target="_blank" rel="noopener noreferrer">The Late-Night Get-More-Done Sleep-less Insomniac Stardew Valley Mod</a></p>
-          <img src="/assets/static/sleeplessinstardew-abefd8ce492e4c33d442a79038069cce.png" alt="Sleepless in Stardew" />
+          <img src={sleeplessInStardew.src} alt="Sleepless in Stardew" />
         </div>
         <div class="col col-6">
           <h3>ReadGood</h3>
           <p><a href="https://github.com/instafluff/ReadGood" target="_blank" rel="noopener noreferrer">The dyslexia-friendly easy-to-read Twitch chat reader</a></p>
-          <img src="/assets/static/readgood-5905ed7e21d3a76b9be6bcdc44a3e91d.png" alt="ReadGood" />
+          <img src={readGood.src} alt="ReadGood" />
         </div>
       </div>
     </div>
@@ -91,10 +97,10 @@ const pageTitle = "Home";
       </a>
       <div class="row" style="margin-top: 2rem;">
         <div class="col col-4">
-          <img src="/assets/static/spellbookCover-b793cfe28b6db6d8c469d074161bc89b.jpg" alt="Spellbook Cover" />
+          <img src={spellbookCover.src} alt="Spellbook Cover" />
         </div>
         <div class="col col-8">
-          <img src="/assets/static/spellbookSpread2-b82349ad759be484f75021004a1b15b2.jpg" alt="Spellbook Spread" />
+          <img src={spellbookSpread.src} alt="Spellbook Spread" />
         </div>
       </div>
     </div>
@@ -108,7 +114,7 @@ const pageTitle = "Home";
       <div class="row">
         <div class="col col-6">
           <div style="max-width: 300px; margin: auto; text-align: left;">
-            <img src="/assets/images/ChatTranslator.png" alt="ChatTranslator" />
+            <img src={chatTranslator.src} alt="ChatTranslator" />
             <h3>ChatTranslator</h3>
             <p>Twitch Extension to break down language barriers among viewers!</p>
             <a class="button" href="http://chattranslator.instafluff.tv/" target="_blank" rel="noopener noreferrer">
@@ -118,7 +124,7 @@ const pageTitle = "Home";
         </div>
         <div class="col col-6">
           <div style="max-width: 300px; margin: auto; text-align: left;">
-            <img src="/assets/images/ClippyRaid.png" alt="ClippyRaid" />
+            <img src={clippyRaid.src} alt="ClippyRaid" />
             <h3>ClippyRaid</h3>
             <p>Twitch Extension to remove the hassle of highlighting chat text!</p>
             <a class="button" href="http://clippyraid.instafluff.tv/" target="_blank" rel="noopener noreferrer">

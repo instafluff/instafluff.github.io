@@ -3,7 +3,7 @@
 ## Goal
 Rebuild instafluff.tv from the ground up with Next.js — transforming it from a Twitch-era landing page into a modern personal home base (portfolio, blog, projects) that will eventually grow into comfy.network.
 
-## Status: Not Started
+## Status: In Progress — Phase 0 Complete
 
 ## Context
 - Current site is Astro 5.x, very Twitch-focused (Twitch embed, "Coding Cafe", limited projects)
@@ -14,14 +14,14 @@ Rebuild instafluff.tv from the ground up with Next.js — transforming it from a
 
 ## Phases
 
-### Phase 0: Next.js Bootstrap
-- [ ] Initialize Next.js project with TypeScript and App Router
-- [ ] Configure `output: 'export'` for static generation
-- [ ] Set up GitHub Actions to build and deploy to GitHub Pages
-- [ ] Set up CSS/SCSS modules with brand design tokens (colors, fonts)
-- [ ] Import Bubblegum Sans + Open Sans fonts
-- [ ] Create root layout with basic nav shell and footer
-- [ ] Verify the CNAME (www.instafluff.tv) works with the new build
+### Phase 0: Next.js Bootstrap ✅
+- [x] Initialize Next.js project with TypeScript and App Router
+- [x] Configure `output: 'export'` for static generation
+- [x] Set up GitHub Actions to build and deploy to GitHub Pages
+- [x] Set up CSS/SCSS modules with brand design tokens (colors, fonts)
+- [x] Import Bubblegum Sans + Open Sans fonts
+- [x] Create root layout with basic nav shell and footer
+- [x] Verify the CNAME (www.instafluff.tv) works with the new build
 - [ ] Ensure develop → master merge flow works with deploy
 
 ### Phase 1: Blog Foundation

@@ -1,0 +1,82 @@
+@use '../styles/tokens' as *;
+
+.hero {
+  text-align: center;
+  padding: $space-xl 0;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  color: $color-body;
+  margin-bottom: $space-sm;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: $space-md;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: $color-body;
+  max-width: 600px;
+  margin: 0 auto $space-lg;
+  line-height: 1.7;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: $color-link;
+  color: $color-white;
+  border-radius: $radius-md;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color $transition-normal, transform $transition-fast;
+
+  &:hover {
+    background-color: #1e4363;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+}
+
+.sections {
+  padding: $space-xl 0;
+}
+
+.section {
+  background-color: $color-accent;
+  border-radius: $radius-lg;
+  padding: $space-xl $space-lg;
+  margin-bottom: $space-lg;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: $space-md;
+}
+
+.sectionDesc {
+  font-size: 1.05rem;
+  color: $color-body;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.comingSoon {
+  display: inline-block;
+  margin-top: $space-md;
+  padding: $space-sm $space-md;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: $radius-round;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-header;
+}

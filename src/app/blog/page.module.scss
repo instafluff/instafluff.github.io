@@ -1,0 +1,19 @@
+@use '../../styles/tokens' as *;
+
+.page {
+  padding: $space-xl 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $space-lg;
+}
+
+.placeholder {
+  text-align: center;
+  padding: $space-xl;
+  background-color: $color-accent;
+  border-radius: $radius-lg;
+  font-size: 1.1rem;
+  color: $color-body;
+}

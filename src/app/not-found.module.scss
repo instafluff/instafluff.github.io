@@ -1,0 +1,51 @@
+@use '../styles/tokens' as *;
+
+.page {
+  text-align: center;
+  padding: $space-xl 0;
+}
+
+.sadFluffle {
+  display: block;
+  margin: 0 auto $space-md;
+  animation: wobble 2s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.code {
+  font-size: 8rem;
+  font-family: $font-heading;
+  color: $color-header;
+  margin-bottom: $space-md;
+}
+
+.title {
+  margin-bottom: $space-md;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin-bottom: $space-lg;
+  color: $color-body;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: $color-link;
+  color: $color-white;
+  border-radius: $radius-md;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color $transition-normal;
+
+  &:hover {
+    background-color: #1e4363;
+    text-decoration: none;
+  }
+}

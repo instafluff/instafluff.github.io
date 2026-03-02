@@ -1,0 +1,71 @@
+@use '../../styles/tokens' as *;
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $space-sm;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: $color-body;
+  margin-bottom: $space-lg;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagFilters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-xs;
+  margin-bottom: $space-xl;
+}
+
+.tagLink {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-header;
+  text-decoration: none;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: $color-nav;
+    text-decoration: none;
+  }
+}
+
+.tagLinkActive {
+  background-color: $color-link;
+  color: $color-white;
+
+  &:hover {
+    background-color: #1e4363;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.empty {
+  text-align: center;
+  padding: $space-xl;
+  background-color: $color-accent;
+  border-radius: $radius-lg;
+  font-size: 1.1rem;
+  color: $color-body;
+}

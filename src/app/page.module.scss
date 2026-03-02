@@ -1,0 +1,296 @@
+@use '../styles/tokens' as *;
+
+// =============================================================================
+// Hero
+// =============================================================================
+
+.hero {
+  text-align: left;
+  padding: $space-xl 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.heroInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xl;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroImage {
+  flex-shrink: 0;
+}
+
+.mascot {
+  width: 280px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 8px 24px rgba(84, 67, 35, 0.2));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.greeting {
+  font-size: 1.25rem;
+  color: $color-body;
+  margin-bottom: $space-sm;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: $space-md;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 0px rgba(84, 67, 35, 0.1);
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: $color-body;
+  max-width: 600px;
+  margin: 0 0 $space-lg;
+  line-height: 1.7;
+
+  @media (max-width: 768px) {
+    margin: 0 auto $space-lg;
+  }
+}
+
+.ctaGroup {
+  display: flex;
+  justify-content: flex-start;
+  gap: $space-md;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: $color-link;
+  color: $color-white;
+  border-radius: $radius-round;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color $transition-normal, transform $transition-fast;
+
+  &:hover {
+    background-color: #1e4363;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+}
+
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: $color-link;
+  border: 2px solid $color-link;
+  border-radius: $radius-round;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color $transition-normal, color $transition-fast;
+
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+// =============================================================================
+// Section shared styles
+// =============================================================================
+
+.sectionTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: $space-lg;
+}
+
+.sectionCta {
+  text-align: center;
+  margin-top: $space-lg;
+}
+
+// =============================================================================
+// Latest Posts
+// =============================================================================
+
+.postsSection {
+  padding: $space-xl $space-md;
+  background-color: $color-accent;
+  border-radius: $radius-xl;
+  max-width: 1200px;
+  margin: 0 auto $space-lg;
+}
+
+.emoteStrip {
+  display: flex;
+  justify-content: center;
+  gap: $space-lg;
+  padding: $space-md 0;
+  opacity: 0.7;
+}
+
+.emote {
+  width: 48px;
+  height: 48px;
+  transition: transform $transition-bounce, opacity $transition-fast;
+
+  &:hover {
+    transform: scale(1.3) rotate(10deg);
+    opacity: 1;
+  }
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-md;
+}
+
+// =============================================================================
+// Featured Projects
+// =============================================================================
+
+.projectsSection {
+  padding: $space-xl 0;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: $space-md;
+}
+
+.projectCard {
+  display: block;
+  background-color: $color-white;
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  text-decoration: none;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
+  border: 2px solid transparent;
+  box-shadow: $shadow-md;
+
+  &:hover {
+    transform: translateY(-4px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
+    border-color: $color-nav;
+    text-decoration: none;
+  }
+}
+
+.projectTag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $color-header;
+  margin-bottom: $space-sm;
+}
+
+.projectName {
+  font-size: 1.3rem;
+  color: $color-header;
+  margin-bottom: $space-sm;
+}
+
+.projectDesc {
+  font-size: 0.9rem;
+  color: $color-body;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+// =============================================================================
+// Connect
+// =============================================================================
+
+.connectSection {
+  padding: $space-xl $space-md;
+  background-color: $color-accent;
+  border-radius: $radius-xl;
+  max-width: 1200px;
+  margin: 0 auto $space-lg;
+  text-align: center;
+}
+
+.connectDesc {
+  font-size: 1.1rem;
+  color: $color-body;
+  max-width: 500px;
+  margin: 0 auto $space-lg;
+}
+
+.sponsorCta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #ea4aaa;
+  color: $color-white;
+  border-radius: $radius-round;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: $space-lg;
+  transition: background-color $transition-normal, transform $transition-bounce;
+  box-shadow: $shadow-md;
+
+  &:hover {
+    background-color: #d63d99;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: $space-md;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: $color-white;
+  color: $color-link;
+  border-radius: $radius-md;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
+  box-shadow: $shadow-md;
+
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+    text-decoration: none;
+    transform: translateY(-4px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
+  }
+}

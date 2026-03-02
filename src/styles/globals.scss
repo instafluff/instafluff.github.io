@@ -1,0 +1,90 @@
+@use './tokens' as *;
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:wght@400;600;700&display=swap');
+
+// =============================================================================
+// Global Reset & Base Styles
+// =============================================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $color-primary;
+  color: $color-body;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  color: $color-header;
+  line-height: 1.2;
+  margin-bottom: $space-md;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  margin-bottom: $space-md;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+:focus-visible {
+  outline: $outline-focus;
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// =============================================================================
+// Utility Classes
+// =============================================================================
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-md;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,105 @@
+@use '../../styles/tokens' as *;
+
+.nav {
+  background-color: rgba(#FFAD15, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(84, 67, 35, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: $z-nav;
+}
+
+.navInner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-md;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $nav-height;
+}
+
+.logo {
+  font-family: $font-heading;
+  font-size: 1.5rem;
+  color: $color-header;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.85;
+  }
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  gap: $space-lg;
+  list-style: none;
+}
+
+.link {
+  font-family: $font-heading;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: $color-header;
+  text-decoration: none;
+  padding: $space-xs $space-sm;
+  border-radius: $radius-sm;
+  transition: background-color $transition-fast, color $transition-fast;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+  }
+}
+
+.linkActive {
+  background-color: $color-white;
+  color: $color-dark;
+  border-radius: $radius-round;
+  box-shadow: $shadow-sm;
+}
+
+// Mobile hamburger
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: $color-header;
+  padding: $space-xs;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: $color-nav;
+    padding: $space-md;
+    gap: $space-sm;
+    box-shadow: $shadow-md;
+  }
+
+  .linksOpen {
+    display: flex;
+  }
+}

@@ -1,10 +1,22 @@
 @use '../../styles/tokens' as *;
 
 .footer {
+  position: relative;
+  margin-top: 3rem;
   background-color: $color-dark;
   color: rgba(255, 255, 255, 0.8);
   padding: $space-xl $space-md $space-lg;
-  margin-top: auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background: $color-dark;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
 }
 
 .footerInner {

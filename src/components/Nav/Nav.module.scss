@@ -1,11 +1,13 @@
 @use '../../styles/tokens' as *;
 
 .nav {
-  background-color: $color-nav;
+  background-color: rgba(#FFAD15, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(84, 67, 35, 0.08);
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: $z-nav;
 }
 
 .navInner {
@@ -53,8 +55,10 @@
 }
 
 .linkActive {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: $color-white;
   color: $color-dark;
+  border-radius: $radius-round;
+  box-shadow: $shadow-sm;
 }
 
 // Mobile hamburger
@@ -83,7 +87,7 @@
     background-color: $color-nav;
     padding: $space-md;
     gap: $space-sm;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow-md;
   }
 
   .linksOpen {

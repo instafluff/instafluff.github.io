@@ -107,23 +107,25 @@
   display: flex;
   flex-direction: column;
   background-color: $color-white;
-  border-radius: $radius-lg;
+  border-radius: $radius-xl;
   padding: $space-lg;
   text-decoration: none;
-  transition: transform $transition-fast, box-shadow $transition-fast;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
   border: 2px solid transparent;
+  box-shadow: $shadow-md;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
     border-color: $color-nav;
     text-decoration: none;
   }
 }
 
 .cardFeatured {
-  border-color: $color-nav;
-  background: linear-gradient(135deg, $color-white, rgba($color-accent, 0.3));
+  border: 2px solid $color-link;
+  box-shadow: 5px 5px 0px rgba(38, 84, 124, 0.15);
+  background-color: $color-white;
 }
 
 .cardHeader {

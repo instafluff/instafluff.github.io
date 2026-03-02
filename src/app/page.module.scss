@@ -20,6 +20,7 @@
 .title {
   font-size: 3.5rem;
   margin-bottom: $space-md;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5), 4px 4px 0px rgba(84, 67, 35, 0.1);
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -46,7 +47,7 @@
   padding: 0.75rem 2rem;
   background-color: $color-link;
   color: $color-white;
-  border-radius: $radius-md;
+  border-radius: $radius-round;
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
@@ -65,7 +66,7 @@
   background-color: transparent;
   color: $color-link;
   border: 2px solid $color-link;
-  border-radius: $radius-md;
+  border-radius: $radius-round;
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
@@ -98,8 +99,11 @@
 // =============================================================================
 
 .postsSection {
-  padding: $space-xl 0;
+  padding: $space-xl $space-md;
   background-color: $color-accent;
+  border-radius: $radius-xl;
+  max-width: 1200px;
+  margin: 0 auto $space-lg;
 }
 
 .postsGrid {
@@ -128,12 +132,13 @@
   border-radius: $radius-lg;
   padding: $space-lg;
   text-decoration: none;
-  transition: transform $transition-fast, box-shadow $transition-fast;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
   border: 2px solid transparent;
+  box-shadow: $shadow-md;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
     border-color: $color-nav;
     text-decoration: none;
   }
@@ -168,8 +173,11 @@
 // =============================================================================
 
 .connectSection {
-  padding: $space-xl 0;
+  padding: $space-xl $space-md;
   background-color: $color-accent;
+  border-radius: $radius-xl;
+  max-width: 1200px;
+  margin: 0 auto $space-lg;
   text-align: center;
 }
 
@@ -195,12 +203,14 @@
   border-radius: $radius-md;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color $transition-fast, transform $transition-fast;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
+  box-shadow: $shadow-md;
 
   &:hover {
     background-color: $color-link;
     color: $color-white;
     text-decoration: none;
-    transform: translateY(-1px);
+    transform: translateY(-4px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
   }
 }

@@ -144,6 +144,14 @@ export default function Home() {
             Join the community on Discord, follow along on GitHub, or just say
             hi on Twitter.
           </p>
+          <a
+            href="https://github.com/sponsors/instafluff"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.sponsorCta}
+          >
+            ❤️ Become a Comfy Sponsor
+          </a>
           <div className={styles.socialLinks}>
             <a href="https://discord.gg/instafluff" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               Discord
@@ -153,6 +161,12 @@ export default function Home() {
             </a>
             <a href="https://twitter.com/inaboringroom" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               Twitter / X
+            </a>
+            <a href="https://www.youtube.com/channel/UCZQgFekgEhWRH3_iIqeNSDA" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              YouTube
+            </a>
+            <a href="https://www.instagram.com/instafluffTV" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              Instagram
             </a>
             <a href="https://twitch.tv/instafluff" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               Twitch

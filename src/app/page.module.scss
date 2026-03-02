@@ -248,6 +248,26 @@
   margin: 0 auto $space-lg;
 }
 
+.sponsorCta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #ea4aaa;
+  color: $color-white;
+  border-radius: $radius-round;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: $space-lg;
+  transition: background-color $transition-normal, transform $transition-bounce;
+  box-shadow: $shadow-md;
+
+  &:hover {
+    background-color: #d63d99;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+}
+
 .socialLinks {
   display: flex;
   justify-content: center;

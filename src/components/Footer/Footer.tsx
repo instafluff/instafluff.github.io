@@ -48,6 +48,21 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a href="https://www.youtube.com/channel/UCZQgFekgEhWRH3_iIqeNSDA" target="_blank" rel="noopener noreferrer" className={styles.linkItem}>
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/instafluffTV" target="_blank" rel="noopener noreferrer" className={styles.linkItem}>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sponsors/instafluff" target="_blank" rel="noopener noreferrer" className={styles.linkItem}>
+                Sponsor ❤️
+              </a>
+            </li>
+            <li>
               <a href="/feed.xml" className={styles.linkItem}>
                 RSS Feed
               </a>

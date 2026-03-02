@@ -20,6 +20,8 @@ const CONNECT_LINKS = [
   { label: 'GitHub', url: 'https://github.com/instafluff' },
   { label: 'Discord', url: 'https://discord.gg/instafluff' },
   { label: 'Twitter / X', url: 'https://twitter.com/inaboringroom' },
+  { label: 'YouTube', url: 'https://www.youtube.com/channel/UCZQgFekgEhWRH3_iIqeNSDA' },
+  { label: 'Instagram', url: 'https://www.instagram.com/instafluffTV' },
   { label: 'Twitch', url: 'https://twitch.tv/instafluff' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/nicemun/' },
   { label: 'Sponsor on GitHub', url: 'https://github.com/sponsors/instafluff' },

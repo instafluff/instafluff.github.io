@@ -17,6 +17,7 @@ export type ProjectCategory =
   | 'Side Business'
   | 'Game'
   | 'Twitch Tool'
+  | 'Twitch Extension'
   | 'Community Project'
   | 'Other';
 
@@ -25,6 +26,7 @@ export const CATEGORIES: ProjectCategory[] = [
   'Side Business',
   'Game',
   'Twitch Tool',
+  'Twitch Extension',
   'Community Project',
   'Other',
 ];
@@ -164,6 +166,22 @@ export const projects: Project[] = [
     category: 'Side Business',
     status: 'active',
   },
+  {
+    name: 'StreamPuppy',
+    description:
+      'Stream companion app — tools and alerts for a better streaming experience.',
+    url: 'https://www.streampuppy.com/',
+    category: 'Side Business',
+    status: 'active',
+  },
+  {
+    name: 'Hand Warmers',
+    description:
+      'Digital hand warmers — a playful warming experience right in your browser.',
+    url: 'http://warmhands.instafluff.tv/',
+    category: 'Side Business',
+    status: 'maintained',
+  },
 
   // ---- Games ----
   {
@@ -188,6 +206,30 @@ export const projects: Project[] = [
     description:
       'Party game where players guess who said what, designed for streams and group play.',
     url: 'https://github.com/instafluff/WhoSaidIt',
+    category: 'Game',
+    status: 'maintained',
+  },
+  {
+    name: 'SnowmASCII',
+    description:
+      'Build ASCII art snowmen in the browser — a cozy winter coding toy.',
+    url: 'https://www.instafluff.tv/SnowmASCII/',
+    category: 'Game',
+    status: 'maintained',
+  },
+  {
+    name: 'ChristmASCII',
+    description:
+      'ASCII Christmas art generator — holiday fun made with characters.',
+    url: 'https://www.instafluff.tv/ChristmASCII',
+    category: 'Game',
+    status: 'maintained',
+  },
+  {
+    name: 'FireplASCII',
+    description:
+      'Cozy ASCII fireplace animation in the browser — warm vibes guaranteed.',
+    url: 'https://www.instafluff.tv/FireplASCII',
     category: 'Game',
     status: 'maintained',
   },
@@ -289,6 +331,112 @@ export const projects: Project[] = [
     category: 'Twitch Tool',
     status: 'maintained',
   },
+  {
+    name: 'ComfySounds',
+    description:
+      'Fun sound effects overlay for Twitch streams — holiday and seasonal themes.',
+    url: 'https://www.instafluff.tv/ComfySounds/',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfyJazz',
+    description:
+      'Background jazz music overlay for streams — set the mood with chill tunes.',
+    url: 'https://www.instafluff.tv/ComfyJazz',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Rainbow Rampage',
+    description:
+      'Colorful chat-controlled game overlay where viewers compete in real time.',
+    url: 'https://www.instafluff.tv/RainbowRampage/',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Capture The Fluff',
+    description:
+      'Interactive Twitch chat game — viewers capture fluffs in a competitive overlay.',
+    url: 'https://www.instafluff.tv/CaptureTheFluff/',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Emote Display',
+    description:
+      'Show emotes used in Twitch chat as a visual overlay on stream.',
+    url: 'https://www.instafluff.tv/EmoteDisplay/',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Baba Yoda',
+    description:
+      'Baby Yoda TTS overlay — channel point rewards trigger adorable text-to-speech.',
+    url: 'https://www.instafluff.tv/BabaYoda',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Highlight Of My Chat',
+    description:
+      'Highlight notable chat messages on screen during Twitch streams.',
+    url: 'https://www.instafluff.tv/HighlightOfMyChat',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Stream Snippets',
+    description:
+      'Quick clip and snippet tool for capturing stream moments via chat commands.',
+    url: 'https://www.instafluff.tv/StreamSnippets',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'NewChatterAlert',
+    description:
+      'Alert overlay that welcomes first-time chatters to your Twitch stream.',
+    url: 'https://github.com/instafluff/NewChatterAlert',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'Extrollminator',
+    description:
+      'Troll detection and moderation tool for Twitch chat.',
+    url: 'https://github.com/instafluff/Extrollminator',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'TwitchCustomRewardID',
+    description:
+      'Developer utility to grab Channel Point reward IDs from Twitch for integrations.',
+    url: 'https://github.com/instafluff/TwitchCustomRewardID',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'TwitchOAuthRevoker',
+    description:
+      'Quickly revoke Twitch OAuth tokens — useful dev tool for cleaning up app authorizations.',
+    url: 'https://github.com/instafluff/TwitchOAuthRevoker',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+
+  // ---- Twitch Extensions ----
+  {
+    name: 'ChatBlocks',
+    description:
+      'Easy no-code Twitch Chatbot and Channel Points tool. Build chatbots without writing code.',
+    url: 'https://www.instafluff.tv/ChatBlocks/',
+    category: 'Twitch Extension',
+    status: 'active',
+  },
 
   // ---- Community Projects ----
   {
@@ -320,8 +468,8 @@ export const projects: Project[] = [
   {
     name: 'The Spellbook Cookbook',
     description:
-      'A real, published cookbook with recipes inspired by fantasy and gaming. Yes, Raphael wrote a cookbook.',
-    url: '#',
+      'A best-selling mug cookbook created with Julie Okahara — fantasy-themed recipes for families and kids of all ages.',
+    url: 'http://cookbook.instafluff.tv/',
     category: 'Other',
     status: 'active',
   },

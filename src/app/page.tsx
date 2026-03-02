@@ -41,8 +41,9 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroInner}>
             <div className={styles.heroText}>
-              <p className={styles.greeting}>Hey there! I&rsquo;m</p>
-              <h1 className={styles.title}>Raphael Mun</h1>
+              <p className={styles.greeting}>Welcome to</p>
+              <h1 className={styles.title}>Instafluff</h1>
+              <p className={styles.byline}>by <strong>Raphael Mun</strong></p>
               <p className={styles.subtitle}>
                 Builder, engineer, creator, entrepreneur. I make comfy things on the
                 internet — from open source tools and side businesses to games and
@@ -170,6 +171,9 @@ export default function Home() {
             </a>
             <a href="https://twitch.tv/instafluff" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               Twitch
+            </a>
+            <a href="https://www.linkedin.com/in/nicemun/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              LinkedIn
             </a>
           </div>
         </div>

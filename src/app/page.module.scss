@@ -50,6 +50,16 @@
   margin-bottom: $space-sm;
 }
 
+.byline {
+  font-size: 1.1rem;
+  color: $color-body;
+  margin-bottom: $space-md;
+  
+  strong {
+    color: $color-header;
+  }
+}
+
 .title {
   font-size: 3.5rem;
   margin-bottom: $space-md;

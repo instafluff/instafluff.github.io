@@ -177,10 +177,10 @@ export const projects: Project[] = [
   {
     name: 'Hand Warmers',
     description:
-      'Digital hand warmers — a playful warming experience right in your browser.',
+      'Digital hand warmers — a playful warming experience right in your browser. No longer available.',
     url: 'http://warmhands.instafluff.tv/',
     category: 'Side Business',
-    status: 'maintained',
+    status: 'archived',
   },
 
   // ---- Games ----
@@ -235,22 +235,6 @@ export const projects: Project[] = [
   },
 
   // ---- Twitch Tools ----
-  {
-    name: 'Chat Translator',
-    description:
-      'Real-time translation overlay for Twitch chat. Break language barriers and connect with viewers worldwide.',
-    url: 'https://github.com/instafluff/ChatTranslator',
-    category: 'Twitch Tool',
-    status: 'maintained',
-  },
-  {
-    name: 'Clippy Raid',
-    description:
-      'Fun raid notification overlay featuring everyone\'s favorite paperclip assistant.',
-    url: 'https://github.com/instafluff/ClippyRaid',
-    category: 'Twitch Tool',
-    status: 'maintained',
-  },
   {
     name: 'ReadGood',
     description:
@@ -437,6 +421,22 @@ export const projects: Project[] = [
     category: 'Twitch Extension',
     status: 'active',
   },
+  {
+    name: 'Chat Translator',
+    description:
+      'Twitch Extension to break down language barriers — real-time translation of chat messages for viewers worldwide.',
+    url: 'http://chattranslator.instafluff.tv/',
+    category: 'Twitch Extension',
+    status: 'maintained',
+  },
+  {
+    name: 'Clippy Raid',
+    description:
+      'Twitch Extension featuring everyone\'s favorite paperclip assistant as a raid notification overlay.',
+    url: 'http://clippyraid.instafluff.tv/',
+    category: 'Twitch Extension',
+    status: 'maintained',
+  },
 
   // ---- Community Projects ----
   {
@@ -468,9 +468,9 @@ export const projects: Project[] = [
   {
     name: 'The Spellbook Cookbook',
     description:
-      'A best-selling mug cookbook created with Julie Okahara — fantasy-themed recipes for families and kids of all ages.',
+      'A mug cookbook created with Julie Okahara — fantasy-themed recipes for families and kids of all ages. No longer in print.',
     url: 'http://cookbook.instafluff.tv/',
     category: 'Other',
-    status: 'active',
+    status: 'archived',
   },
 ];

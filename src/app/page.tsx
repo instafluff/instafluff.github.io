@@ -158,14 +158,6 @@ export default function Home() {
               Twitch
             </a>
           </div>
-          <Image
-            src="/assets/campfire.gif"
-            alt="Cozy campfire"
-            width={64}
-            height={64}
-            className={styles.campfire}
-            unoptimized
-          />
         </div>
       </section>
     </>

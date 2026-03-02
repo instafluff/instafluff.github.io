@@ -42,7 +42,9 @@ See [tasks/redesign-site.md](../tasks/redesign-site.md) for the full plan.
 - ✅ **Phase 3:** Projects page with 16 projects across 5 categories (Open Source, Side Business, Game, Twitch Tool, Other), featured section, status badges, project cards
 - ✅ **Phase 4:** About page with profile header + avatar, full bio, timeline (2017–2026), fun facts, connect links grid
 - ✅ **Phase 5:** Nav active link highlighting, RSS link in footer, sitemap.xml, robots.txt, favicon, enhanced SEO (Open Graph, Twitter cards), skip-to-content link
+- ✅ **Design Polish:** Warm brown-tinted shadows, bouncy spring transitions, glass-blur nav with pill active states, hero title 3D text shadow, floating rounded section islands, wave footer separator, increased card radii, bright tags, offset featured shadows, avatar offset shadow, timeline hover animations, focus-visible outlines
+- ✅ **Projects Expansion:** Grew catalog from 16 → 35 projects. Added Community Project category. Added Comfy-series tools (ComfyKit, ComfyLights, ComfyTypes, ComfyTwitch, ComfyDiscord, ComfySheets), 9 Twitch tools (TwitchPaint, EarlyBirdBot, BitsToSpeech, ClippyAssistant, TrickOrTreatBot, ChompSquad, InstaBot, FollowerTrain, TwitchCardsBot), 3 community projects (InsatfluffHQ, CommunityAPIs, StreamAvatars), Notecards.to, WhoSaidIt
 
 ## What's Next
 
-Phase 6: Nice-to-haves — dark mode toggle, newsletter signup, blog search, project filtering. These are optional enhancements that need design decisions.
+Content & refinement — real blog posts, project description review, design feedback from Raphael, potential dark mode. The site is ready for a `develop` → `master` merge when Raphael approves.

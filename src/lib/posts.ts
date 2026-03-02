@@ -12,6 +12,7 @@ export interface PostFrontmatter {
   date: string;
   description: string;
   tags: string[];
+  coverImage?: string;
   draft?: boolean;
 }
 
@@ -61,6 +62,7 @@ export function getAllPosts(): PostMeta[] {
         date: fm.date,
         description: fm.description,
         tags: fm.tags ?? [],
+        coverImage: fm.coverImage,
         draft: fm.draft,
         readingTime: readingTime(content).text,
       } satisfies PostMeta;
@@ -88,6 +90,7 @@ export function getPostBySlug(slug: string): Post | null {
     date: fm.date,
     description: fm.description,
     tags: fm.tags ?? [],
+    coverImage: fm.coverImage,
     draft: fm.draft,
     readingTime: readingTime(content).text,
     content,

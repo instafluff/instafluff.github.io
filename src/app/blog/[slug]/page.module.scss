@@ -20,6 +20,20 @@
   }
 }
 
+.coverWrapper {
+  margin-bottom: $space-lg;
+  border-radius: $radius-xl;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+}
+
+.coverImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .header {
   margin-bottom: $space-xl;
 }

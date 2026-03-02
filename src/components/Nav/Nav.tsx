@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import styles from './Nav.module.scss';
@@ -25,6 +26,13 @@ export default function Nav() {
     <nav className={styles.nav}>
       <div className={styles.navInner}>
         <Link href="/" className={styles.logo}>
+          <Image
+            src="/assets/emote-profile.png"
+            alt=""
+            width={32}
+            height={32}
+            className={styles.logoIcon}
+          />
           Instafluff
         </Link>
 

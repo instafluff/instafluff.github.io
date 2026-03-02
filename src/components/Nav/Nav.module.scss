@@ -25,11 +25,20 @@
   font-size: 1.5rem;
   color: $color-header;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
 
   &:hover {
     text-decoration: none;
     opacity: 0.85;
   }
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .links {

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { PostMeta } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 import styles from './PostCard.module.scss';
@@ -10,6 +11,17 @@ interface PostCardProps {
 export default function PostCard({ post }: PostCardProps) {
   return (
     <Link href={`/blog/${post.slug}`} className={styles.card}>
+      {post.coverImage && (
+        <div className={styles.cardImageWrapper}>
+          <Image
+            src={post.coverImage}
+            alt=""
+            width={400}
+            height={200}
+            className={styles.cardImage}
+          />
+        </div>
+      )}
       <h3 className={styles.title}>{post.title}</h3>
       <div className={styles.meta}>
         <time dateTime={post.date}>{formatDate(post.date)}</time>

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getAllSlugs, getPostBySlug } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
@@ -31,6 +32,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.description,
       type: 'article',
+      ...(post.coverImage && {
+        images: [{ url: post.coverImage }],
+      }),
       publishedTime: post.date,
       tags: post.tags,
     },
@@ -51,6 +55,19 @@ export default async function BlogPostPage({ params }: PageProps) {
       <Link href="/blog" className={styles.backLink}>
         ← Back to blog
       </Link>
+
+      {post.coverImage && (
+        <div className={styles.coverWrapper}>
+          <Image
+            src={post.coverImage}
+            alt={post.title}
+            width={760}
+            height={400}
+            className={styles.coverImage}
+            priority
+          />
+        </div>
+      )}
 
       <header className={styles.header}>
         <h1 className={styles.title}>{post.title}</h1>

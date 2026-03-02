@@ -17,6 +17,7 @@ export type ProjectCategory =
   | 'Side Business'
   | 'Game'
   | 'Twitch Tool'
+  | 'Community Project'
   | 'Other';
 
 export const CATEGORIES: ProjectCategory[] = [
@@ -24,6 +25,7 @@ export const CATEGORIES: ProjectCategory[] = [
   'Side Business',
   'Game',
   'Twitch Tool',
+  'Community Project',
   'Other',
 ];
 
@@ -70,6 +72,54 @@ export const projects: Project[] = [
     category: 'Open Source',
     status: 'maintained',
   },
+  {
+    name: 'ComfyKit',
+    description:
+      'A toolkit and starter kit for building Twitch interactive overlays quickly with minimal setup.',
+    url: 'https://github.com/instafluff/ComfyKit',
+    category: 'Open Source',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfyLights',
+    description:
+      'Control smart lights like Hue and LIFX directly from Twitch chat commands during live streams.',
+    url: 'https://github.com/instafluff/ComfyLights',
+    category: 'Open Source',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfyTypes',
+    description:
+      'TypeScript type definitions for the Comfy ecosystem to make integrations safer and easier to build.',
+    url: 'https://github.com/instafluff/ComfyTypes',
+    category: 'Open Source',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfyTwitch',
+    description:
+      'Simplified Twitch API wrapper for common streaming tasks and everyday channel automation.',
+    url: 'https://github.com/instafluff/ComfyTwitch',
+    category: 'Open Source',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfyDiscord',
+    description:
+      'Discord bot framework in the Comfy style: simple, approachable, and minimal boilerplate.',
+    url: 'https://github.com/instafluff/ComfyDiscord',
+    category: 'Open Source',
+    status: 'maintained',
+  },
+  {
+    name: 'ComfySheets',
+    description:
+      'Read and write Google Sheets from Node.js with a dead-simple API for quick automations.',
+    url: 'https://github.com/instafluff/ComfySheets',
+    category: 'Open Source',
+    status: 'maintained',
+  },
 
   // ---- Side Businesses ----
   {
@@ -106,6 +156,14 @@ export const projects: Project[] = [
     category: 'Side Business',
     status: 'active',
   },
+  {
+    name: 'Notecards.to',
+    description:
+      'Simple, shareable digital notecards for quick communication and lightweight collaboration.',
+    url: 'https://notecards.to',
+    category: 'Side Business',
+    status: 'active',
+  },
 
   // ---- Games ----
   {
@@ -124,6 +182,14 @@ export const projects: Project[] = [
     url: 'https://github.com/instafluff/SleeplessInStardew',
     category: 'Game',
     status: 'archived',
+  },
+  {
+    name: 'WhoSaidIt',
+    description:
+      'Party game where players guess who said what, designed for streams and group play.',
+    url: 'https://github.com/instafluff/WhoSaidIt',
+    category: 'Game',
+    status: 'maintained',
   },
 
   // ---- Twitch Tools ----
@@ -149,6 +215,104 @@ export const projects: Project[] = [
       'Text-to-speech for Twitch chat — let your viewers\' messages be heard out loud on stream.',
     url: 'https://github.com/instafluff/ReadGood',
     category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'TwitchPaint',
+    description:
+      'Collaborative pixel art canvas controlled by Twitch chat where viewers paint together in real time.',
+    url: 'https://github.com/instafluff/TwitchPaint',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'EarlyBirdBot',
+    description:
+      'Twitch bot that rewards early viewers and tracks who shows up first in chat.',
+    url: 'https://github.com/instafluff/EarlyBirdBot',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'BitsToSpeech',
+    description:
+      'Converts Twitch Bits cheers into text-to-speech alerts with customizable voices.',
+    url: 'https://github.com/instafluff/BitsToSpeech',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'ClippyAssistant',
+    description:
+      'The legendary Clippy paperclip reimagined as a Twitch stream assistant overlay.',
+    url: 'https://github.com/instafluff/ClippyAssistant',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'TrickOrTreatBot',
+    description:
+      'Halloween-themed Twitch chat bot with seasonal trick-or-treat games for the community.',
+    url: 'https://github.com/instafluff/TrickOrTreatBot',
+    category: 'Twitch Tool',
+    status: 'archived',
+  },
+  {
+    name: 'ChompSquad',
+    description:
+      'Community feeding game where Twitch chat works together to feed virtual pets.',
+    url: 'https://github.com/instafluff/ChompSquad',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'InstaBot',
+    description:
+      'General-purpose Twitch bot with modular commands, timers, and chat games.',
+    url: 'https://github.com/instafluff/InstaBot',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'FollowerTrain',
+    description:
+      'Follower train tracker and alert overlay for Twitch streams.',
+    url: 'https://github.com/instafluff/FollowerTrain',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+  {
+    name: 'TwitchCardsBot',
+    description:
+      'Trading card game played entirely through Twitch chat.',
+    url: 'https://github.com/instafluff/TwitchCardsBot',
+    category: 'Twitch Tool',
+    status: 'maintained',
+  },
+
+  // ---- Community Projects ----
+  {
+    name: 'InsatfluffHQ',
+    description:
+      'Community headquarters app: a dashboard for managing Instafluff community events and projects.',
+    url: 'https://github.com/instafluff/InsatfluffHQ',
+    category: 'Community Project',
+    status: 'maintained',
+  },
+  {
+    name: 'CommunityAPIs',
+    description:
+      'Collection of fun APIs built live during community streams, including playful endpoints like random facts and quotes.',
+    url: 'https://github.com/instafluff/CommunityAPIs',
+    category: 'Community Project',
+    status: 'maintained',
+  },
+  {
+    name: 'StreamAvatars',
+    description:
+      'Custom animated avatars that walk around on stream and respond to chat-driven interactions.',
+    url: 'https://github.com/instafluff/StreamAvatars',
+    category: 'Community Project',
     status: 'maintained',
   },
 

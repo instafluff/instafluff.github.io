@@ -1,13 +1,19 @@
 @use '../../styles/tokens' as *;
 
 .page {
-  padding: $space-xl 0;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
 }
 
 .title {
   text-align: center;
   margin-bottom: $space-md;
 }
+
+// ---------------------------------------------------------------------------
+// Intro
+// ---------------------------------------------------------------------------
 
 .intro {
   text-align: center;
@@ -16,6 +22,52 @@
   font-size: 1.1rem;
   line-height: 1.8;
 }
+
+// ---------------------------------------------------------------------------
+// Profile header
+// ---------------------------------------------------------------------------
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: $space-lg;
+  margin-bottom: $space-xl;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid $color-nav;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profileInfo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profileName {
+  font-size: 2rem;
+  margin-bottom: $space-xs;
+}
+
+.profileTagline {
+  font-size: 1.1rem;
+  color: $color-body;
+  line-height: 1.6;
+}
+
+// ---------------------------------------------------------------------------
+// Cards
+// ---------------------------------------------------------------------------
 
 .card {
   background-color: $color-accent;
@@ -27,4 +79,108 @@
 .cardTitle {
   font-size: 1.5rem;
   margin-bottom: $space-sm;
+}
+
+.cardContent {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $color-body;
+}
+
+// ---------------------------------------------------------------------------
+// Timeline
+// ---------------------------------------------------------------------------
+
+.timeline {
+  background-color: $color-accent;
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  margin-bottom: $space-lg;
+}
+
+.timelineTitle {
+  font-size: 1.5rem;
+  margin-bottom: $space-md;
+}
+
+.timelineList {
+  list-style: none;
+  position: relative;
+  padding-left: $space-lg;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background-color: $color-nav;
+  }
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: $space-md;
+  padding-left: $space-sm;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(-#{$space-lg} + 2px);
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $color-nav;
+    border: 2px solid $color-primary;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timelineYear {
+  font-family: $font-heading;
+  font-size: 1rem;
+  color: $color-header;
+  margin-bottom: 0.15rem;
+}
+
+.timelineText {
+  font-size: 0.9rem;
+  color: $color-body;
+  line-height: 1.5;
+}
+
+// ---------------------------------------------------------------------------
+// Connect Section
+// ---------------------------------------------------------------------------
+
+.connectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: $space-md;
+  margin-top: $space-md;
+}
+
+.connectLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-md;
+  background-color: $color-white;
+  border-radius: $radius-md;
+  font-weight: 600;
+  color: $color-link;
+  text-decoration: none;
+  transition: background-color $transition-fast, transform $transition-fast;
+
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
 }

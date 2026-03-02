@@ -47,6 +47,11 @@ export default function Footer() {
                 Twitter / X
               </a>
             </li>
+            <li>
+              <a href="/feed.xml" className={styles.linkItem}>
+                RSS Feed
+              </a>
+            </li>
           </ul>
         </div>
 

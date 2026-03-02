@@ -1,8 +1,14 @@
 @use '../styles/tokens' as *;
 
+// =============================================================================
+// Hero
+// =============================================================================
+
 .hero {
   text-align: center;
   padding: $space-xl 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .greeting {
@@ -28,6 +34,13 @@
   line-height: 1.7;
 }
 
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: $space-md;
+  flex-wrap: wrap;
+}
+
 .cta {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -46,37 +59,148 @@
   }
 }
 
-.sections {
-  padding: $space-xl 0;
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: $color-link;
+  border: 2px solid $color-link;
+  border-radius: $radius-md;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color $transition-normal, color $transition-fast;
+
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+    text-decoration: none;
+  }
 }
 
-.section {
-  background-color: $color-accent;
-  border-radius: $radius-lg;
-  padding: $space-xl $space-lg;
-  margin-bottom: $space-lg;
-  text-align: center;
-}
+// =============================================================================
+// Section shared styles
+// =============================================================================
 
 .sectionTitle {
   font-size: 2rem;
-  margin-bottom: $space-md;
+  text-align: center;
+  margin-bottom: $space-lg;
 }
 
-.sectionDesc {
-  font-size: 1.05rem;
-  color: $color-body;
-  max-width: 500px;
-  margin: 0 auto;
+.sectionCta {
+  text-align: center;
+  margin-top: $space-lg;
 }
 
-.comingSoon {
+// =============================================================================
+// Latest Posts
+// =============================================================================
+
+.postsSection {
+  padding: $space-xl 0;
+  background-color: $color-accent;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-md;
+}
+
+// =============================================================================
+// Featured Projects
+// =============================================================================
+
+.projectsSection {
+  padding: $space-xl 0;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: $space-md;
+}
+
+.projectCard {
+  display: block;
+  background-color: $color-white;
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  text-decoration: none;
+  transition: transform $transition-fast, box-shadow $transition-fast;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: $color-nav;
+    text-decoration: none;
+  }
+}
+
+.projectTag {
   display: inline-block;
-  margin-top: $space-md;
-  padding: $space-sm $space-md;
-  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0.15rem 0.6rem;
+  background-color: $color-accent;
   border-radius: $radius-round;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: $color-header;
+  margin-bottom: $space-sm;
+}
+
+.projectName {
+  font-size: 1.3rem;
+  color: $color-header;
+  margin-bottom: $space-sm;
+}
+
+.projectDesc {
+  font-size: 0.9rem;
+  color: $color-body;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+// =============================================================================
+// Connect
+// =============================================================================
+
+.connectSection {
+  padding: $space-xl 0;
+  background-color: $color-accent;
+  text-align: center;
+}
+
+.connectDesc {
+  font-size: 1.1rem;
+  color: $color-body;
+  max-width: 500px;
+  margin: 0 auto $space-lg;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: $space-md;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: $color-white;
+  color: $color-link;
+  border-radius: $radius-md;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color $transition-fast, transform $transition-fast;
+
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
 }

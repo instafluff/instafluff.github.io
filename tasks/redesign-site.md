@@ -3,7 +3,7 @@
 ## Goal
 Rebuild instafluff.tv from the ground up with Next.js — transforming it from a Twitch-era landing page into a modern personal home base (portfolio, blog, projects) that will eventually grow into comfy.network.
 
-## Status: In Progress — Phase 0 Complete
+## Status: In Progress — Phases 0–5 Complete
 
 ## Context
 - Current site is Astro 5.x, very Twitch-focused (Twitch embed, "Coding Cafe", limited projects)
@@ -24,39 +24,42 @@ Rebuild instafluff.tv from the ground up with Next.js — transforming it from a
 - [x] Verify the CNAME (www.instafluff.tv) works with the new build
 - [ ] Ensure develop → master merge flow works with deploy
 
-### Phase 1: Blog Foundation
-- [ ] Set up MDX content pipeline (read `.mdx` files from `src/content/` at build time)
-- [ ] Create blog post layout/template with proper typography
-- [ ] Create blog listing page with pagination
-- [ ] Add RSS feed generation (static XML at build time)
-- [ ] Support tags/categories for posts
-- [ ] Use `generateStaticParams()` for post routes
+### Phase 1: Blog Foundation ✅
+- [x] Set up MDX content pipeline (read `.mdx` files from `src/content/` at build time)
+- [x] Create blog post layout/template with proper typography
+- [x] Create blog listing page with tag filters
+- [x] Add RSS feed generation (static XML at build time)
+- [x] Support tags/categories for posts
+- [x] Use `generateStaticParams()` for post routes
 
-### Phase 2: Homepage
-- [ ] New hero section — introduce Raphael/Instafluff as a builder, engineer, creator, entrepreneur
-- [ ] Featured/latest blog posts section
-- [ ] Featured projects section (highlight top projects + side businesses)
-- [ ] Quick links to Discord, GitHub, socials
-- [ ] Keep warm amber/golden color scheme and Bubblegum Sans headers
+### Phase 2: Homepage ✅
+- [x] New hero section — introduce Raphael/Instafluff as a builder, engineer, creator, entrepreneur
+- [x] Featured/latest blog posts section
+- [x] Featured projects section (highlight top projects + side businesses)
+- [x] Quick links to Discord, GitHub, socials
+- [x] Keep warm amber/golden color scheme and Bubblegum Sans headers
 
-### Phase 3: Projects & Tools Page
-- [ ] Projects page with categories: Open Source, Side Businesses, Games (PixelPlush), Twitch Tools, Other
-- [ ] Add descriptions, links, and status for each project
-- [ ] Featured/highlighted projects at the top
-- [ ] Include side businesses: ComfySend, MediaOptimizer, LooThru, Approvals.to, etc.
+### Phase 3: Projects & Tools Page ✅
+- [x] Projects page with categories: Open Source, Side Businesses, Games (PixelPlush), Twitch Tools, Other
+- [x] Add descriptions, links, and status for each project
+- [x] Featured/highlighted projects at the top
+- [x] Include side businesses: ComfySend, MediaOptimizer, LooThru, Approvals.to, etc.
 
-### Phase 4: About Page
-- [ ] Full bio — Microsoft Principal Engineer, Prague, entrepreneur, pilot, community builder, cookbook author
-- [ ] Timeline or journey highlights
-- [ ] Links to socials, Discord, GitHub sponsor
-- [ ] This is the page people land on from LinkedIn/socials — make it personal and memorable
+### Phase 4: About Page ✅
+- [x] Full bio — Microsoft Principal Engineer, Prague, entrepreneur, pilot, community builder, cookbook author
+- [x] Timeline or journey highlights
+- [x] Links to socials, Discord, GitHub sponsor
+- [x] This is the page people land on from LinkedIn/socials — make it personal and memorable
 
-### Phase 5: Navigation & Polish
-- [ ] Updated nav: Home, Blog, Projects, About
-- [ ] Modernized footer with all links
-- [ ] Mobile-responsive everything
-- [ ] SEO meta tags, Open Graph images
-- [ ] 404 page with personality
+### Phase 5: Navigation & Polish ✅
+- [x] Updated nav: Home, Blog, Projects, About
+- [x] Modernized footer with all links (including RSS)
+- [x] Mobile-responsive everything
+- [x] SEO meta tags, Open Graph, Twitter cards
+- [x] 404 page with personality
+- [x] Active link highlighting in nav
+- [x] sitemap.xml, robots.txt, favicon
+- [x] Skip-to-content accessibility link
 
 ### Phase 6: Nice-to-Haves
 - [ ] Dark mode toggle

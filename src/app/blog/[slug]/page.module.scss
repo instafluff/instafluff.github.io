@@ -1,0 +1,160 @@
+@use '../../../styles/tokens' as *;
+
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  font-size: 0.9rem;
+  color: $color-link;
+  margin-bottom: $space-lg;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  margin-bottom: $space-xl;
+}
+
+.title {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  margin-bottom: $space-md;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-md;
+  font-size: 0.9rem;
+  color: $color-body;
+  opacity: 0.8;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  margin-top: $space-sm;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $color-header;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-nav;
+    text-decoration: none;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// MDX Prose Styles
+// ---------------------------------------------------------------------------
+
+.prose {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: $color-body;
+
+  h2 {
+    font-size: 1.75rem;
+    margin-top: $space-xl;
+    margin-bottom: $space-md;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-top: $space-lg;
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    margin-bottom: $space-md;
+  }
+
+  ul, ol {
+    margin-bottom: $space-md;
+    padding-left: $space-lg;
+  }
+
+  li {
+    margin-bottom: $space-xs;
+  }
+
+  blockquote {
+    border-left: 4px solid $color-nav;
+    padding: $space-sm $space-md;
+    margin: $space-lg 0;
+    background-color: rgba(255, 223, 101, 0.3);
+    border-radius: 0 $radius-md $radius-md 0;
+    font-style: italic;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  code {
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 0.15rem 0.4rem;
+    border-radius: $radius-sm;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background-color: $color-dark;
+    color: #f0e6d0;
+    padding: $space-md;
+    border-radius: $radius-md;
+    overflow-x: auto;
+    margin: $space-lg 0;
+
+    code {
+      background: none;
+      padding: 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  img {
+    border-radius: $radius-md;
+    margin: $space-lg 0;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid $color-accent;
+    margin: $space-xl 0;
+  }
+
+  a {
+    color: $color-link;
+    text-decoration: underline;
+    text-decoration-color: rgba($color-link, 0.3);
+    text-underline-offset: 2px;
+
+    &:hover {
+      text-decoration-color: $color-link;
+    }
+  }
+}

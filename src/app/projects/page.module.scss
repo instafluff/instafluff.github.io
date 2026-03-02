@@ -1,19 +1,181 @@
 @use '../../styles/tokens' as *;
 
 .page {
-  padding: $space-xl 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
 }
 
 .title {
   text-align: center;
-  margin-bottom: $space-lg;
+  margin-bottom: $space-sm;
 }
 
-.placeholder {
+.subtitle {
   text-align: center;
-  padding: $space-xl;
-  background-color: $color-accent;
-  border-radius: $radius-lg;
   font-size: 1.1rem;
   color: $color-body;
+  max-width: 550px;
+  margin: 0 auto $space-lg;
+}
+
+// ---------------------------------------------------------------------------
+// Category Filters
+// ---------------------------------------------------------------------------
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-xs;
+  margin-bottom: $space-xl;
+}
+
+.filterBtn {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-header;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: $font-body;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: $color-nav;
+  }
+}
+
+.filterBtnActive {
+  background-color: $color-link;
+  color: $color-white;
+
+  &:hover {
+    background-color: #1e4363;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Featured
+// ---------------------------------------------------------------------------
+
+.featuredSection {
+  margin-bottom: $space-xl;
+}
+
+.featuredTitle {
+  font-size: 1.5rem;
+  margin-bottom: $space-md;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $space-md;
+}
+
+// ---------------------------------------------------------------------------
+// Category Groups
+// ---------------------------------------------------------------------------
+
+.categoryGroup {
+  margin-bottom: $space-xl;
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  margin-bottom: $space-md;
+  padding-bottom: $space-xs;
+  border-bottom: 2px solid $color-accent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $space-md;
+}
+
+// ---------------------------------------------------------------------------
+// Project Card
+// ---------------------------------------------------------------------------
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  text-decoration: none;
+  transition: transform $transition-fast, box-shadow $transition-fast;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-color: $color-nav;
+    text-decoration: none;
+  }
+}
+
+.cardFeatured {
+  border-color: $color-nav;
+  background: linear-gradient(135deg, $color-white, rgba($color-accent, 0.3));
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  margin-bottom: $space-sm;
+}
+
+.cardTag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: $color-header;
+}
+
+.cardStatus {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statusActive {
+  color: #2e7d32;
+}
+
+.statusMaintained {
+  color: $color-link;
+}
+
+.statusArchived {
+  color: #999;
+}
+
+.statusBeta {
+  color: #e65100;
+}
+
+.cardName {
+  font-size: 1.2rem;
+  color: $color-header;
+  margin-bottom: $space-sm;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: $color-body;
+  line-height: 1.6;
+  margin-bottom: 0;
+  flex: 1;
 }

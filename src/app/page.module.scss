@@ -50,16 +50,6 @@
   margin-bottom: $space-sm;
 }
 
-.byline {
-  font-size: 1.1rem;
-  color: $color-body;
-  margin-bottom: $space-md;
-  
-  strong {
-    color: $color-header;
-  }
-}
-
 .title {
   font-size: 3.5rem;
   margin-bottom: $space-md;
@@ -76,6 +66,10 @@
   max-width: 600px;
   margin: 0 0 $space-lg;
   line-height: 1.7;
+
+  strong {
+    color: $color-header;
+  }
 
   @media (max-width: 768px) {
     margin: 0 auto $space-lg;

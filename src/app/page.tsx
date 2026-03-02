@@ -41,13 +41,12 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroInner}>
             <div className={styles.heroText}>
-              <p className={styles.greeting}>Welcome to</p>
-              <h1 className={styles.title}>Instafluff</h1>
-              <p className={styles.byline}>by <strong>Raphael Mun</strong></p>
+              <p className={styles.greeting}>Welcome to the</p>
+              <h1 className={styles.title}>Comfy Corner</h1>
               <p className={styles.subtitle}>
-                Builder, engineer, creator, entrepreneur. I make comfy things on the
-                internet — from open source tools and side businesses to games and
-                community projects.
+                I&apos;m <strong>Instafluff</strong> (Raphael Mun) — builder, engineer,
+                creator, entrepreneur. I make comfy things on the internet, from
+                open source tools and side businesses to games and community projects.
               </p>
               <div className={styles.ctaGroup}>
                 <Link href="/about" className={styles.cta}>

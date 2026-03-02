@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const pageTitle = "ComfyJS - The Comfiest Twitch Chat Library";
+---
+<Layout title={pageTitle}>
+
+# ComfyJS
+
+**ComfyJS** is an open‐source JavaScript library that makes it incredibly easy to connect to Twitch chat and respond to messages, commands, and events.
+
+## Key Features
+- **Simplicity:** Set up a basic Twitch chat listener in one line of code.
+- **Chat Commands Handling:** Easily define custom commands.
+- **Multiple Environments:** Works both in Node.js and in the browser.
+- **Extensible & Event-Rich:** Supports various Twitch events such as subs, raids, and more.
+
+## Setup Guide
+
+### For Node.js:
+1. **Install the package:**
+```bash
+npm install comfy.js --save
+```
+
+2. **Initialize the library:**
+```JavaScript
+const ComfyJS = require("comfy.js");
+ComfyJS.Init("YourTwitchChannel");
+```
+
+3. **Add event handlers:**
+```JavaScript
+ComfyJS.onCommand = (user, command, message, flags, extra) => {
+  if (command === "dice") {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    console.log(`${user} rolled a ${roll}`);
+  }
+};
+```
+
+### For Browser:
+1. **Include via CDN:**
+```html
+<script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+```
+
+2. Initialize and add event listeners as above.
+
+## Example Usage
+
+A simple command bot that greets users and responds to `!uptime`:
+
+```JavaScript
+ComfyJS.onChat = (user, message) => {
+  if (message.toLowerCase().includes("hello")) {
+    ComfyJS.Say(`Hello @${user}!`);
+  }
+};
+
+ComfyJS.onCommand = (user, command) => {
+  if (command === "uptime") {
+    ComfyJS.Say(`@${user}, the stream has been live for 2 hours!`);
+  }
+};
+
+ComfyJS.Init("YourTwitchChannel");
+```
+
+For more details, check out the [GitHub repository](https://github.com/instafluff/ComfyJS).
+
+</Layout>

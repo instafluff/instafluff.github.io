@@ -89,6 +89,29 @@
   color: $color-body;
 }
 
+.artGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-md;
+  padding: 0 $space-lg $space-lg;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artImage {
+  width: 100%;
+  height: auto;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  transition: transform $transition-bounce;
+
+  &:hover {
+    transform: scale(1.03) rotate(0.5deg);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Timeline
 // ---------------------------------------------------------------------------

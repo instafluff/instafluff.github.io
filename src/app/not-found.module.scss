@@ -5,6 +5,18 @@
   padding: $space-xl 0;
 }
 
+.sadFluffle {
+  display: block;
+  margin: 0 auto $space-md;
+  animation: wobble 2s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
 .code {
   font-size: 8rem;
   font-family: $font-heading;

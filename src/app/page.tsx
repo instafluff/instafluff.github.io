@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
@@ -38,23 +39,56 @@ export default function Home() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className="container">
-          <p className={styles.greeting}>Hey there! I&rsquo;m</p>
-          <h1 className={styles.title}>Raphael Mun</h1>
-          <p className={styles.subtitle}>
-            Builder, engineer, creator, entrepreneur. I make comfy things on the
-            internet — from open source tools and side businesses to games and
-            community projects.
-          </p>
-          <div className={styles.ctaGroup}>
-            <Link href="/about" className={styles.cta}>
-              About me
-            </Link>
-            <Link href="/projects" className={styles.ctaSecondary}>
-              View projects
-            </Link>
+          <div className={styles.heroInner}>
+            <div className={styles.heroText}>
+              <p className={styles.greeting}>Hey there! I&rsquo;m</p>
+              <h1 className={styles.title}>Raphael Mun</h1>
+              <p className={styles.subtitle}>
+                Builder, engineer, creator, entrepreneur. I make comfy things on the
+                internet — from open source tools and side businesses to games and
+                community projects.
+              </p>
+              <div className={styles.ctaGroup}>
+                <Link href="/about" className={styles.cta}>
+                  About me
+                </Link>
+                <Link href="/projects" className={styles.ctaSecondary}>
+                  View projects
+                </Link>
+              </div>
+            </div>
+            <div className={styles.heroImage}>
+              <Image
+                src="/assets/fluffle-full.png"
+                alt="Instafluff mascot"
+                width={280}
+                height={280}
+                className={styles.mascot}
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Emote accent strip */}
+      <div className={styles.emoteStrip}>
+        {[
+          { src: '/assets/emote-comfy.png', alt: 'Comfy' },
+          { src: '/assets/emote-love.png', alt: 'Love' },
+          { src: '/assets/emote-luff.png', alt: 'Luff' },
+          { src: '/assets/emote-wow.png', alt: 'Wow' },
+        ].map((emote) => (
+          <Image
+            key={emote.alt}
+            src={emote.src}
+            alt={emote.alt}
+            width={48}
+            height={48}
+            className={styles.emote}
+          />
+        ))}
+      </div>
 
       {/* Latest Posts */}
       {recentPosts.length > 0 && (
@@ -124,6 +158,14 @@ export default function Home() {
               Twitch
             </a>
           </div>
+          <Image
+            src="/assets/campfire.gif"
+            alt="Cozy campfire"
+            width={64}
+            height={64}
+            className={styles.campfire}
+            unoptimized
+          />
         </div>
       </section>
     </>

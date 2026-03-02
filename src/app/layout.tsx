@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     description:
       'Builder, engineer, creator, entrepreneur. Blog, projects, and everything comfy.',
     url: 'https://www.instafluff.tv',
+    images: [
+      {
+        url: '/assets/og-cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Instafluff — Raphael Mun',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',

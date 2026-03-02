@@ -109,6 +109,30 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Community Art */}
+      <div className={styles.card}>
+        <h2 className={styles.cardTitle}>Community Art</h2>
+        <div className={styles.cardContent}>
+          <p>
+            One of the best parts of the Instafluff community is the incredible art
+            people create. Here are some pieces by community artist Lily featuring our
+            mascot Fluffington!
+          </p>
+        </div>
+        <div className={styles.artGallery}>
+          {[1, 2, 3, 4].map((n) => (
+            <Image
+              key={n}
+              src={`/assets/community-art-${n}.png`}
+              alt={`Community art ${n} by Lily`}
+              width={280}
+              height={158}
+              className={styles.artImage}
+            />
+          ))}
+        </div>
+      </div>
+
       {/* Get in Touch */}
       <div className={styles.card}>
         <h2 className={styles.cardTitle}>Get in Touch</h2>

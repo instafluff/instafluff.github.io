@@ -104,7 +104,7 @@ export default function AboutPage() {
             of contributors.
           </p>
           <p>
-            🐕 Dog dad. Cat enthusiast. Fluff is a way of life.
+            🐾 Proud beagle dad for many years — my buddy crossed the rainbow bridge, but the fluff lives on.
           </p>
         </div>
       </div>

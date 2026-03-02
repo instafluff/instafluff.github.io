@@ -22,9 +22,10 @@ For every change, evaluate:
 - [ ] **Brand** — Does this follow the Instafluff design system (colors, fonts, tone)?
 - [ ] **Responsive** — Does this work on mobile, tablet, and desktop?
 - [ ] **Accessibility** — Proper heading hierarchy, alt text, contrast ratios, focus states?
-- [ ] **Performance** — Are images optimized? Any unnecessary JS?
+- [ ] **Performance** — Are images optimized? Minimal client JS? Prefer Server Components?
 - [ ] **SEO** — Meta tags, Open Graph, semantic HTML?
 - [ ] **Patterns** — Does this follow existing patterns in the codebase?
+- [ ] **Static Export** — Is this compatible with `output: 'export'`? No server-only features?
 - [ ] **Build** — Does `npm run build` pass with 0 errors?
 
 ## Rules
@@ -32,5 +33,7 @@ For every change, evaluate:
 - Be specific: suggest fixes, don't just point out problems
 - This is a personal site — don't demand enterprise-grade patterns
 - If something works and is readable, ship it
-- Flag any hardcoded colors that should use SCSS variables
+- Flag any hardcoded colors that should use CSS variables/modules
 - Flag any inline styles that should be in stylesheets
+- Flag any `'use client'` that isn't necessary
+- Ensure nothing breaks static export (no `cookies()`, `headers()`, dynamic server features)

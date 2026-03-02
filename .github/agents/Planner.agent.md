@@ -33,6 +33,14 @@ You don't write code. You plan, prioritize, delegate, and track.
 4. **Track** what's done and what's next
 5. **Update** progress docs at the end of every session
 
+## Project Context
+
+This is a two-phase project:
+1. **Now:** Next.js static site (portfolio, blog, projects) deployed to GitHub Pages
+2. **Future:** Expand into comfy.network — add API server, auth, social features
+
+Architecture decisions now should make Phase 2 natural, not require a rewrite.
+
 ## Task File Format
 
 Every task in `/tasks/` follows this structure:
@@ -46,14 +54,15 @@ Completed tasks move to `/tasks/done/`.
 
 ## Key Context Files
 
-- [tasks/redesign-site.md](tasks/redesign-site.md) — master redesign plan with all phases
-- `.github/copilot-instructions.md` — project overview, brand constraints, tech stack
+- [tasks/redesign-site.md](tasks/redesign-site.md) — master rebuild plan with all phases
+- `.github/copilot-instructions.md` — project overview, brand constraints, tech stack, comfy.network vision
 
 ## Rules
 
 - Be opinionated about priority — recommend ONE thing, not a menu
 - When delegating, name the exact agent and exact task
 - Don't write code — delegate to Developer or other agents
-- The redesign has phases — respect the order (Blog Foundation → Homepage → Projects → About → Nav/Layout)
+- The rebuild has phases — respect the order (Next.js Setup → Blog → Homepage → Projects → About → Nav/Layout)
 - Keep the Instafluff brand: warm amber colors, Bubblegum Sans, comfy vibe
-- Work on `develop` branch for redesign. Only merge to `master` with Raphael's permission.
+- Work on `develop` branch. Only merge to `master` with Raphael's permission.
+- Push changes after committing — don't just commit locally.

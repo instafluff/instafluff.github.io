@@ -1,6 +1,6 @@
 ---
 description: Code reviewer. Reviews changes for correctness, simplicity, brand consistency, and accessibility.
-model: Claude Opus 4.6 (copilot)
+model: GPT 5.3 Codex (copilot)
 tools: ['read', 'search', 'vscode', 'todo']
 argument-hint: A file or change to review
 handoffs:

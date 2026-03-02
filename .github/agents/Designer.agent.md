@@ -1,6 +1,6 @@
 ---
 description: Design advisor and UX reviewer. Ensures the site stays true to the Instafluff brand while modernizing the look.
-model: Claude Opus 4.6 (copilot)
+model: Gemini 2.5 Pro (copilot)
 tools: ['read', 'search', 'vscode', 'todo']
 argument-hint: A page layout to review, a design decision to evaluate, or a brand consistency check
 ---

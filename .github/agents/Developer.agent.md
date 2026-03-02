@@ -1,6 +1,6 @@
 ---
 description: Full-stack developer for the Next.js site. Builds pages, components, layouts, blog system, and styles.
-model: Claude Opus 4.6 (copilot)
+model: GPT 5.3 Codex (copilot)
 tools: ['read', 'edit', 'search', 'execute', 'todo', 'vscode']
 argument-hint: A page to build, a component to create, or a bug to fix
 handoffs:

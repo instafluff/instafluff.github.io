@@ -1,6 +1,6 @@
 ---
 description: Design advisor and UX reviewer. Ensures the site stays true to the Instafluff brand while modernizing the look.
-model: Gemini 2.5 Pro (copilot)
+model: Gemini 3.1 Pro (Preview) (copilot)
 tools: ['read', 'search', 'vscode', 'todo']
 argument-hint: A page layout to review, a design decision to evaluate, or a brand consistency check
 ---

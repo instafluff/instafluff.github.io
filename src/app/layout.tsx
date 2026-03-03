@@ -1,7 +1,22 @@
 import type { Metadata } from 'next';
+import { Bubblegum_Sans, Open_Sans } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import '@/styles/globals.scss';
+
+const bubblegumSans = Bubblegum_Sans({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+});
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-body',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -53,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${bubblegumSans.variable} ${openSans.variable}`}>
       <body>
         <a href="#main-content" className="visually-hidden">
           Skip to main content

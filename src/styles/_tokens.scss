@@ -13,8 +13,8 @@ $color-white: #FFFFFF;
 $color-dark: #3A2E14;           // Dark variant for contrast
 
 // Typography
-$font-heading: 'Bubblegum Sans', cursive;
-$font-body: 'Open Sans', sans-serif;
+$font-heading: var(--font-heading), 'Bubblegum Sans', 'Chalkboard SE', 'Comic Sans MS', sans-serif;
+$font-body: var(--font-body), 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
 // Spacing
 $space-xs: 0.25rem;

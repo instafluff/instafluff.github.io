@@ -1,7 +1,7 @@
 ---
 description: Project orchestrator and session coordinator. Plans work, tracks progress, triages issues, and decides what to do next.
 model: Claude Opus 4.6 (copilot)
-tools: ['read', 'search', 'todo', 'agent', 'vscode']
+tools: ['read', 'search', 'todo', 'agent', 'vscode', 'web', 'execute', 'edit']
 argument-hint: What should I work on next? or Update progress for this session
 agents: ['*']
 handoffs:

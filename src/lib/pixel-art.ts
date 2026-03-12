@@ -91,8 +91,7 @@ export const pixelArt: PixelArt[] = [
   { id: 'bongo-cat', name: 'Bongo Cat', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/BongoCat.gif', animated: true },
   { id: 'bird-march', name: 'Bird March', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/BirdMarch.gif', animated: true },
   { id: 'fluffington', name: 'Fluffington', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/Fluffington.gif', animated: true },
-  { id: 'mr-meowgi', name: 'Mr. Meowgi', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/MrMeowgi-StephenBallBall.gif', animated: true },
-  { id: 'pedro-raccoon', name: 'Pedro Raccoon', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/pedro-raccoon.gif', animated: true },
+
   { id: 'turbo-cat', name: 'Turbo Cat', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/TurboCat.png', animated: false },
   { id: 'sprinkle-donut', name: 'Sprinkle Donut', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/0003-SprinkleDonut.png', animated: false },
   { id: 'glazed-donut', name: 'Glazed Donut', category: 'Pixel Fun', src: '/assets/pixel-art/pixel-fun/0003-GlazeDonut.png', animated: false },

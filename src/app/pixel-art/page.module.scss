@@ -1,0 +1,169 @@
+@use '../../styles/tokens' as *;
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: $space-xl $space-md;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $space-sm;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: $color-body;
+  max-width: 700px;
+  margin: 0 auto $space-lg;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-xs;
+  margin-bottom: $space-lg;
+}
+
+.filterBtn {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  background-color: $color-accent;
+  border-radius: $radius-round;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-header;
+  cursor: pointer;
+  border: none;
+  font-family: $font-body;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: $color-nav;
+  }
+}
+
+.filterBtnActive {
+  background-color: $color-link;
+  color: $color-white;
+
+  &:hover {
+    background-color: #1e4363;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: $space-md;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  background-color: $color-white;
+  border-radius: $radius-xl;
+  box-shadow: $shadow-md;
+  border: 2px solid transparent;
+  padding: $space-md;
+  cursor: pointer;
+  transition: transform $transition-bounce, box-shadow $transition-normal;
+
+  &:hover {
+    transform: translateY(-3px) rotate(0.5deg);
+    box-shadow: $shadow-lift;
+    border-color: $color-nav;
+  }
+}
+
+.cardImage {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background-color: $color-white;
+  background-image:
+    linear-gradient(45deg, rgba(84, 67, 35, 0.06) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(84, 67, 35, 0.06) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(84, 67, 35, 0.06) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(84, 67, 35, 0.06) 75%);
+  background-size: 14px 14px;
+  background-position: 0 0, 0 7px, 7px -7px, -7px 0;
+  border-radius: $radius-lg;
+}
+
+.cardName {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $color-header;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: $z-modal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: $space-md;
+}
+
+.lightboxContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImage {
+  max-width: min(90vw, 700px);
+  max-height: calc(90vh - 70px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.lightboxName {
+  margin-top: $space-sm;
+  color: $color-white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: $space-md;
+  right: $space-md;
+  color: $color-primary;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: $space-sm;
+  }
+}

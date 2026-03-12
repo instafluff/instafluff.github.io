@@ -62,6 +62,7 @@ Rebuild instafluff.tv from the ground up with Next.js — transforming it from a
 - [x] Skip-to-content accessibility link
 
 ### Phase 6: Nice-to-Haves
+- [ ] **Pixel Art Gallery** — `/pixel-art` page showcasing 80+ pixel art pieces from PixelArts repo (see [tasks/pixel-art-gallery.md](pixel-art-gallery.md))
 - [ ] Dark mode toggle
 - [ ] Newsletter signup (when platform is chosen)
 - [ ] Search for blog posts

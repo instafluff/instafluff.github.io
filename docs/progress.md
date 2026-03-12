@@ -47,4 +47,6 @@ See [tasks/redesign-site.md](../tasks/redesign-site.md) for the full plan.
 
 ## What's Next
 
-Content & refinement — real blog posts, project description review, design feedback from Raphael, potential dark mode. The site is ready for a `develop` → `master` merge when Raphael approves.
+**Immediate:** Pixel Art Gallery page — Raphael has ~80+ pixel art pieces and animations in `D:\GitHub\PixelArts` that need a gallery page at `/pixel-art`. Task file: [tasks/pixel-art-gallery.md](../tasks/pixel-art-gallery.md). Delegate to **Developer agent**.
+
+**Then:** Content & refinement — real blog posts, project description review, design feedback from Raphael, potential dark mode. The site is ready for a `develop` → `master` merge when Raphael approves.

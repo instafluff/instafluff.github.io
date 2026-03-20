@@ -137,7 +137,7 @@ export const projects: Project[] = [
     name: 'MediaOptimizer',
     description:
       'Batch-optimize images and media for the web. Fast, free, and runs entirely in the browser.',
-    url: 'https://mediaoptimizer.io',
+    url: 'https://mediaoptimizer.pro',
     category: 'Side Business',
     featured: true,
     status: 'active',

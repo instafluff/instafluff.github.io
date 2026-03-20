@@ -26,7 +26,7 @@ const FEATURED_PROJECTS = [
   {
     name: 'MediaOptimizer',
     desc: 'Batch-optimize images and media for the web. Fast, free, runs in the browser.',
-    url: 'https://mediaoptimizer.io',
+    url: 'https://mediaoptimizer.pro',
     tag: 'Side Business',
   },
 ];

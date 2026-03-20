@@ -1,3 +1,33 @@
 {
-    "chat.customAgentInSubagent.enabled": true
+  "chat.customAgentInSubagent.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    "Remove-Item": true,
+    "git config": true,
+    "git rev-parse": true,
+    "git pull": true,
+    "Push-Location": true,
+    "Set-Content": true,
+    "Test-Path": true,
+    "git stash": true,
+    "git commit": true,
+    "Out-Null": true,
+    "ForEach-Object": true,
+    "git ls-remote": true,
+    "git merge": true,
+    "Copy-Item": true,
+    "git add": true,
+    "New-Item": true,
+    "Move-Item": true,
+    "git checkout": true,
+    "Resolve-Path": true,
+    "Out-File": true,
+    "ConvertFrom-Json": true,
+    "git remote": true,
+    "git push": true,
+    "Pop-Location": true,
+    "git mv": true,
+    "gh": true,
+    "git reset": true,
+    "Set-Location": true
+  }
 }
